@@ -95,22 +95,15 @@
       <property role="IQ2ns" value="8218746718699890354" />
       <ref role="20lvS9" node="78eQDyb0OGG" resolve="Brick" />
     </node>
-    <node concept="1TJgyj" id="5BVoFE7aTUz" role="1TKVEi">
+    <node concept="1TJgyj" id="4b34_B6gae$" role="1TKVEi">
+      <property role="IQ2ns" value="4810709003749335972" />
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="states" />
-      <property role="20lbJX" value="1..n" />
-      <property role="IQ2ns" value="6483884641801182883" />
-      <ref role="20lvS9" node="5BVoFE7aToI" resolve="State" />
+      <property role="20kJfa" value="lcd" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="4b34_B6g58N" resolve="Lcd" />
     </node>
     <node concept="PrWs8" id="78eQDyb2T_e" role="PzmwI">
       <ref role="PrY4T" to="4fqr:431DWIovi3l" resolve="IMainClass" />
-    </node>
-    <node concept="1TJgyj" id="5BVoFE7aTUA" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="init_state" />
-      <property role="20lbJX" value="1" />
-      <property role="IQ2ns" value="6483884641801182886" />
-      <ref role="20lvS9" node="5BVoFE7aToI" resolve="State" />
     </node>
     <node concept="PrWs8" id="5BVoFE7b1lu" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -217,6 +210,33 @@
     <node concept="M4N5e" id="4b34_B6g9AL" role="M5hS2">
       <property role="1uS6qv" value="3456789" />
       <property role="1uS6qo" value="SLOT3" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4b34_B6gacj">
+    <property role="EcuMT" value="4810709003749335827" />
+    <property role="TrG5h" value="Quizz" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="4b34_B6gadb" role="1TKVEi">
+      <property role="IQ2ns" value="4810709003749335883" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="words" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="4b34_B6gacJ" resolve="Word" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4b34_B6gacJ">
+    <property role="EcuMT" value="4810709003749335855" />
+    <property role="TrG5h" value="Word" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="4b34_B6gae4" role="1TKVEl">
+      <property role="IQ2nx" value="4810709003749335940" />
+      <property role="TrG5h" value="word" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="4b34_B6gae6" role="1TKVEl">
+      <property role="IQ2nx" value="4810709003749335942" />
+      <property role="TrG5h" value="score" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
   </node>
 </model>

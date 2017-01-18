@@ -16,6 +16,12 @@
     <file name="Brick_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ArduinoML.behavior.Brick_BehaviorDescriptor" />
     </file>
+    <file name="Lcd_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="ArduinoML.behavior.Lcd_BehaviorDescriptor" />
+    </file>
+    <file name="Quizz_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="ArduinoML.behavior.Quizz_BehaviorDescriptor" />
+    </file>
     <file name="Sensor_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ArduinoML.behavior.Sensor_BehaviorDescriptor" />
     </file>
@@ -24,6 +30,9 @@
     </file>
     <file name="Transition_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ArduinoML.behavior.Transition_BehaviorDescriptor" />
+    </file>
+    <file name="Word_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="ArduinoML.behavior.Word_BehaviorDescriptor" />
     </file>
   </root>
 </debug-info>
