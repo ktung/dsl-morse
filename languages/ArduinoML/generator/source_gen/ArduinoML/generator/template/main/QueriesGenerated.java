@@ -40,6 +40,9 @@ public class QueriesGenerated {
   public static Object propertyMacro_GetPropertyValue_6483884641801880125(final PropertyMacroContext _context) {
     return "" + _context.getSessionObject("current_state_name");
   }
+  public static Object propertyMacro_GetPropertyValue_8374239055426001626(final PropertyMacroContext _context) {
+    return SPropertyOperations.getString_def(_context.getNode(), MetaAdapterFactory.getProperty(0x5edee0cf46e149f9L, 0x971e6b9e2e5cae16L, 0x42c31259c6405233L, 0x42c31259c640524fL, "bus"), null);
+  }
   public static SNode sourceNodeQuery_6483884641801785773(final SourceSubstituteMacroNodeContext _context) {
     _context.putSessionObject("current_state_name", SPropertyOperations.getString(_context.getNode(), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
     return SLinkOperations.getTarget(_context.getNode(), MetaAdapterFactory.getContainmentLink(0x5edee0cf46e149f9L, 0x971e6b9e2e5cae16L, 0x59fb62ba872b962eL, 0x59fb62ba872b9ea0L, "transition"));

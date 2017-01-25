@@ -12,6 +12,7 @@ public class map_App {
     System.out.println("void setup() {");
     System.out.println("  pinMode(" + 12 + ", OUTPUT);");
     System.out.println("  pinMode(" + 9 + ", INPUT);");
+    System.out.println(" // Here comes lcd declaration");
     System.out.println("}");
 
     System.out.println("\n// Behavioral concepts");

@@ -9,9 +9,9 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="67j" ref="r:c3495eae-2a50-4eb5-87a2-5e8ab67ad9fe(ArduinoML.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
+    <import index="67j" ref="r:c3495eae-2a50-4eb5-87a2-5e8ab67ad9fe(ArduinoML.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -166,43 +166,6 @@
       </concept>
     </language>
   </registry>
-  <node concept="bUwia" id="78eQDyb0Aiv">
-    <property role="TrG5h" value="main" />
-    <node concept="3aamgX" id="78eQDyb2ZIr" role="3acgRq">
-      <ref role="30HIoZ" to="67j:78eQDyb0IIO" resolve="Sensor" />
-      <node concept="j$656" id="78eQDyb2ZIx" role="1lVwrX">
-        <ref role="v9R2y" node="78eQDyb2ZIv" resolve="reduce_Sensor" />
-      </node>
-    </node>
-    <node concept="3aamgX" id="78eQDyb34zg" role="3acgRq">
-      <ref role="30HIoZ" to="67j:78eQDyb0OGF" resolve="Actuator" />
-      <node concept="j$656" id="78eQDyb34zo" role="1lVwrX">
-        <ref role="v9R2y" node="78eQDyb34zm" resolve="reduce_Actuator" />
-      </node>
-    </node>
-    <node concept="3aamgX" id="5BVoFE7cwlW" role="3acgRq">
-      <ref role="30HIoZ" to="67j:5BVoFE7aToI" resolve="State" />
-      <node concept="j$656" id="5BVoFE7cx0b" role="1lVwrX">
-        <ref role="v9R2y" node="5BVoFE7cx09" resolve="reduce_State" />
-      </node>
-    </node>
-    <node concept="3aamgX" id="5BVoFE7cwm4" role="3acgRq">
-      <ref role="30HIoZ" to="67j:5BVoFE7aTCq" resolve="Action" />
-      <node concept="j$656" id="5BVoFE7cx0R" role="1lVwrX">
-        <ref role="v9R2y" node="5BVoFE7cx0P" resolve="reduce_Action" />
-      </node>
-    </node>
-    <node concept="3aamgX" id="5BVoFE7cx0D" role="3acgRq">
-      <ref role="30HIoZ" to="67j:5BVoFE7aTS0" resolve="Transition" />
-      <node concept="j$656" id="5BVoFE7cx1n" role="1lVwrX">
-        <ref role="v9R2y" node="5BVoFE7cx1l" resolve="reduce_Transition" />
-      </node>
-    </node>
-    <node concept="3lhOvk" id="78eQDyb1XUp" role="3lj3bC">
-      <ref role="30HIoZ" to="67j:78eQDyb0OGH" resolve="App" />
-      <ref role="3lhOvi" node="78eQDyb1XNT" resolve="map_App" />
-    </node>
-  </node>
   <node concept="312cEu" id="78eQDyb1XNT">
     <property role="TrG5h" value="map_App" />
     <node concept="2tJIrI" id="78eQDyb1XUI" role="jymVt" />
@@ -279,6 +242,20 @@
                     <node concept="30H73N" id="6srTZRDO15O" role="2Oq$k0" />
                   </node>
                 </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="7gRhwPyRLad" role="3cqZAp">
+          <node concept="2OqwBi" id="7gRhwPyRLaa" role="3clFbG">
+            <node concept="10M0yZ" id="7gRhwPyRLab" role="2Oq$k0">
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+            </node>
+            <node concept="liA8E" id="7gRhwPyRLac" role="2OqNvi">
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <node concept="Xl_RD" id="7gRhwPyRLmF" role="37wK5m">
+                <property role="Xl_RC" value=" // Here comes lcd declaration" />
               </node>
             </node>
           </node>
@@ -854,6 +831,98 @@
         </node>
       </node>
       <node concept="raruj" id="5BVoFE7ddN$" role="lGtFl" />
+    </node>
+  </node>
+  <node concept="13MO4I" id="7gRhwPyR6Kk">
+    <property role="TrG5h" value="reduce_Lcd" />
+    <ref role="3gUMe" to="67j:4b34_B6g58N" resolve="Lcd" />
+    <node concept="9aQIb" id="7gRhwPyR7g5" role="13RCb5">
+      <node concept="3clFbS" id="7gRhwPyR7g6" role="9aQI4">
+        <node concept="raruj" id="7gRhwPyR8DW" role="lGtFl" />
+        <node concept="3clFbF" id="7gRhwPyR8E1" role="3cqZAp">
+          <node concept="2OqwBi" id="7gRhwPyR8DY" role="3clFbG">
+            <node concept="10M0yZ" id="7gRhwPyR8DZ" role="2Oq$k0">
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+            </node>
+            <node concept="liA8E" id="7gRhwPyR8E0" role="2OqNvi">
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <node concept="3cpWs3" id="7gRhwPyRcyy" role="37wK5m">
+                <node concept="Xl_RD" id="7gRhwPyRcOi" role="3uHU7w">
+                  <property role="Xl_RC" value=");" />
+                </node>
+                <node concept="3cpWs3" id="7gRhwPyRaum" role="3uHU7B">
+                  <node concept="Xl_RD" id="7gRhwPyR9xZ" role="3uHU7B">
+                    <property role="Xl_RC" value="LiquidCrystal lcd(" />
+                  </node>
+                  <node concept="Xl_RD" id="7gRhwPyRgto" role="3uHU7w">
+                    <property role="Xl_RC" value="bus" />
+                    <node concept="17Uvod" id="7gRhwPyRDFp" role="lGtFl">
+                      <property role="P4ACc" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1070475926800/1070475926801" />
+                      <property role="2qtEX9" value="value" />
+                      <node concept="3zFVjK" id="7gRhwPyRDFq" role="3zH0cK">
+                        <node concept="3clFbS" id="7gRhwPyRDFr" role="2VODD2">
+                          <node concept="3clFbF" id="7gRhwPyRIrE" role="3cqZAp">
+                            <node concept="2OqwBi" id="7gRhwPyRICt" role="3clFbG">
+                              <node concept="30H73N" id="7gRhwPyRIrD" role="2Oq$k0" />
+                              <node concept="3TrcHB" id="7gRhwPyRIQQ" role="2OqNvi">
+                                <ref role="3TsBF5" to="67j:4b34_B6g59f" resolve="bus" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="bUwia" id="78eQDyb0Aiv">
+    <property role="TrG5h" value="main" />
+    <node concept="3aamgX" id="78eQDyb2ZIr" role="3acgRq">
+      <ref role="30HIoZ" to="67j:78eQDyb0IIO" resolve="Sensor" />
+      <node concept="j$656" id="78eQDyb2ZIx" role="1lVwrX">
+        <ref role="v9R2y" node="78eQDyb2ZIv" resolve="reduce_Sensor" />
+      </node>
+    </node>
+    <node concept="3aamgX" id="78eQDyb34zg" role="3acgRq">
+      <ref role="30HIoZ" to="67j:78eQDyb0OGF" resolve="Actuator" />
+      <node concept="j$656" id="78eQDyb34zo" role="1lVwrX">
+        <ref role="v9R2y" node="78eQDyb34zm" resolve="reduce_Actuator" />
+      </node>
+    </node>
+    <node concept="3aamgX" id="5BVoFE7cwlW" role="3acgRq">
+      <ref role="30HIoZ" to="67j:5BVoFE7aToI" resolve="State" />
+      <node concept="j$656" id="5BVoFE7cx0b" role="1lVwrX">
+        <ref role="v9R2y" node="5BVoFE7cx09" resolve="reduce_State" />
+      </node>
+    </node>
+    <node concept="3aamgX" id="5BVoFE7cwm4" role="3acgRq">
+      <ref role="30HIoZ" to="67j:5BVoFE7aTCq" resolve="Action" />
+      <node concept="j$656" id="5BVoFE7cx0R" role="1lVwrX">
+        <ref role="v9R2y" node="5BVoFE7cx0P" resolve="reduce_Action" />
+      </node>
+    </node>
+    <node concept="3aamgX" id="5BVoFE7cx0D" role="3acgRq">
+      <ref role="30HIoZ" to="67j:5BVoFE7aTS0" resolve="Transition" />
+      <node concept="j$656" id="5BVoFE7cx1n" role="1lVwrX">
+        <ref role="v9R2y" node="5BVoFE7cx1l" resolve="reduce_Transition" />
+      </node>
+    </node>
+    <node concept="3aamgX" id="7gRhwPyR6K6" role="3acgRq">
+      <ref role="30HIoZ" to="67j:4b34_B6g58N" resolve="Lcd" />
+      <node concept="j$656" id="7gRhwPyR6Km" role="1lVwrX">
+        <ref role="v9R2y" node="7gRhwPyR6Kk" resolve="reduce_Lcd" />
+      </node>
+    </node>
+    <node concept="3lhOvk" id="78eQDyb1XUp" role="3lj3bC">
+      <ref role="30HIoZ" to="67j:78eQDyb0OGH" resolve="App" />
+      <ref role="3lhOvi" node="78eQDyb1XNT" resolve="map_App" />
     </node>
   </node>
 </model>
