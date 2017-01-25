@@ -18,45 +18,45 @@
     </file>
   </root>
   <root nodeRef="r:c3495eae-2a50-4eb5-87a2-5e8ab67ad9fe(ArduinoML.structure)/4810709003749333392">
-    <file name="LCDSLOT.java">
+    <file name="LCDBUS.java">
       <node id="4810709003749333392" at="14,0,15,0" concept="2" trace="myName" />
       <node id="4810709003749333392" at="15,27,16,18" concept="6" />
       <node id="4810709003749333392" at="18,0,19,0" concept="2" trace="myValue" />
-      <node id="4810709003749333392" at="19,39,20,18" concept="1" />
+      <node id="4810709003749333392" at="19,45,20,18" concept="1" />
       <node id="4810709003749333392" at="20,18,21,20" concept="1" />
-      <node id="4810709003749333392" at="23,29,24,19" concept="6" />
-      <node id="4810709003749333392" at="26,36,27,37" concept="6" />
-      <node id="4810709003749333392" at="29,46,30,74" concept="5" />
-      <node id="4810709003749333392" at="30,74,31,58" concept="1" />
-      <node id="4810709003749333392" at="31,58,32,58" concept="1" />
-      <node id="4810709003749333392" at="32,58,33,58" concept="1" />
-      <node id="4810709003749333392" at="33,58,34,16" concept="6" />
-      <node id="4810709003749333392" at="36,38,37,16" concept="6" />
-      <node id="4810709003749333392" at="40,24,41,34" concept="6" />
-      <node id="4810709003749333392" at="43,57,44,27" concept="6" />
-      <node id="4810709003749333392" at="46,57,47,27" concept="6" />
-      <node id="4810709003749333392" at="49,57,50,27" concept="6" />
-      <node id="4810709003749333392" at="51,5,52,32" concept="6" />
+      <node id="4810709003749333392" at="23,28,24,19" concept="6" />
+      <node id="4810709003749333392" at="26,36,27,19" concept="6" />
+      <node id="4810709003749333392" at="29,45,30,72" concept="5" />
+      <node id="4810709003749333392" at="30,72,31,56" concept="1" />
+      <node id="4810709003749333392" at="31,56,32,56" concept="1" />
+      <node id="4810709003749333392" at="32,56,33,56" concept="1" />
+      <node id="4810709003749333392" at="33,56,34,16" concept="6" />
+      <node id="4810709003749333392" at="36,37,37,16" concept="6" />
+      <node id="4810709003749333392" at="40,24,41,33" concept="6" />
+      <node id="4810709003749333392" at="43,55,44,25" concept="6" />
+      <node id="4810709003749333392" at="46,55,47,25" concept="6" />
+      <node id="4810709003749333392" at="49,55,50,25" concept="6" />
+      <node id="4810709003749333392" at="51,5,52,31" concept="6" />
       <node id="4810709003749333392" at="15,0,18,0" concept="4" trace="getName#()Ljava/lang/String;" />
-      <node id="4810709003749333392" at="23,0,26,0" concept="4" trace="getValue#()Z" />
+      <node id="4810709003749333392" at="23,0,26,0" concept="4" trace="getValue#()Ljava/lang/String;" />
       <node id="4810709003749333392" at="26,0,29,0" concept="4" trace="getValueAsString#()Ljava/lang/String;" />
-      <node id="4810709003749333392" at="36,0,39,0" concept="7" trace="getDefault#()LArduinoML/structure/LCDSLOT;" />
-      <node id="4810709003749333392" at="39,50,42,5" concept="3" />
+      <node id="4810709003749333392" at="36,0,39,0" concept="7" trace="getDefault#()LArduinoML/structure/LCDBUS;" />
+      <node id="4810709003749333392" at="39,49,42,5" concept="3" />
       <node id="4810709003749333392" at="42,5,45,5" concept="3" />
       <node id="4810709003749333392" at="45,5,48,5" concept="3" />
       <node id="4810709003749333392" at="48,5,51,5" concept="3" />
-      <node id="4810709003749333392" at="19,0,23,0" concept="0" trace="LCDSLOT#(Ljava/lang/String;Z)V" />
+      <node id="4810709003749333392" at="19,0,23,0" concept="0" trace="LCDBUS#(Ljava/lang/String;Ljava/lang/String;)V" />
       <node id="4810709003749333392" at="29,0,36,0" concept="7" trace="getConstants#()Ljava/util/List;" />
-      <node id="4810709003749333392" at="39,0,54,0" concept="7" trace="parseValue#(Ljava/lang/String;)LArduinoML/structure/LCDSLOT;" />
+      <node id="4810709003749333392" at="39,0,54,0" concept="7" trace="parseValue#(Ljava/lang/String;)LArduinoML/structure/LCDBUS;" />
       <scope id="4810709003749333392" at="15,27,16,18" />
-      <scope id="4810709003749333392" at="23,29,24,19" />
-      <scope id="4810709003749333392" at="26,36,27,37" />
-      <scope id="4810709003749333392" at="36,38,37,16" />
-      <scope id="4810709003749333392" at="40,24,41,34" />
-      <scope id="4810709003749333392" at="43,57,44,27" />
-      <scope id="4810709003749333392" at="46,57,47,27" />
-      <scope id="4810709003749333392" at="49,57,50,27" />
-      <scope id="4810709003749333392" at="19,39,21,20" />
+      <scope id="4810709003749333392" at="23,28,24,19" />
+      <scope id="4810709003749333392" at="26,36,27,19" />
+      <scope id="4810709003749333392" at="36,37,37,16" />
+      <scope id="4810709003749333392" at="40,24,41,33" />
+      <scope id="4810709003749333392" at="43,55,44,25" />
+      <scope id="4810709003749333392" at="46,55,47,25" />
+      <scope id="4810709003749333392" at="49,55,50,25" />
+      <scope id="4810709003749333392" at="19,45,21,20" />
       <scope id="4810709003749333392" at="15,0,18,0" />
       <scope id="4810709003749333392" at="23,0,26,0" />
       <scope id="4810709003749333392" at="26,0,29,0" />
@@ -65,37 +65,37 @@
         <var name="name" id="4810709003749333392" />
         <var name="value" id="4810709003749333392" />
       </scope>
-      <scope id="4810709003749333392" at="29,46,34,16">
+      <scope id="4810709003749333392" at="29,45,34,16">
         <var name="list" id="4810709003749333392" />
       </scope>
       <scope id="4810709003749333392" at="29,0,36,0" />
-      <scope id="4810709003749333392" at="39,50,52,32" />
+      <scope id="4810709003749333392" at="39,49,52,31" />
       <scope id="4810709003749333392" at="39,0,54,0">
         <var name="value" id="4810709003749333392" />
       </scope>
-      <unit id="4810709003749333392" at="9,0,55,0" name="ArduinoML.structure.LCDSLOT" />
+      <unit id="4810709003749333392" at="9,0,55,0" name="ArduinoML.structure.LCDBUS" />
     </file>
-    <file name="LCDSLOT_PropertySupport.java">
+    <file name="LCDBUS_PropertySupport.java">
       <node id="4810709003749333392" at="11,24,12,18" concept="6" />
-      <node id="4810709003749333392" at="13,5,14,91" concept="5" />
-      <node id="4810709003749333392" at="15,33,16,42" concept="5" />
+      <node id="4810709003749333392" at="13,5,14,89" concept="5" />
+      <node id="4810709003749333392" at="15,33,16,41" concept="5" />
       <node id="4810709003749333392" at="17,45,18,20" concept="6" />
       <node id="4810709003749333392" at="20,5,21,17" concept="6" />
       <node id="4810709003749333392" at="24,24,25,18" concept="6" />
-      <node id="4810709003749333392" at="26,5,27,91" concept="5" />
-      <node id="4810709003749333392" at="28,33,29,42" concept="5" />
+      <node id="4810709003749333392" at="26,5,27,89" concept="5" />
+      <node id="4810709003749333392" at="28,33,29,41" concept="5" />
       <node id="4810709003749333392" at="30,45,31,43" concept="6" />
       <node id="4810709003749333392" at="33,5,34,16" concept="6" />
-      <node id="4810709003749333392" at="36,49,37,49" concept="5" />
+      <node id="4810709003749333392" at="36,49,37,47" concept="5" />
       <node id="4810709003749333392" at="38,27,39,32" concept="6" />
       <node id="4810709003749333392" at="40,5,41,14" concept="6" />
       <node id="4810709003749333392" at="10,44,13,5" concept="3" />
-      <node id="4810709003749333392" at="16,42,19,7" concept="3" />
+      <node id="4810709003749333392" at="16,41,19,7" concept="3" />
       <node id="4810709003749333392" at="23,47,26,5" concept="3" />
-      <node id="4810709003749333392" at="29,42,32,7" concept="3" />
-      <node id="4810709003749333392" at="37,49,40,5" concept="3" />
-      <node id="4810709003749333392" at="14,91,20,5" concept="8" />
-      <node id="4810709003749333392" at="27,91,33,5" concept="8" />
+      <node id="4810709003749333392" at="29,41,32,7" concept="3" />
+      <node id="4810709003749333392" at="37,47,40,5" concept="3" />
+      <node id="4810709003749333392" at="14,89,20,5" concept="8" />
+      <node id="4810709003749333392" at="27,89,33,5" concept="8" />
       <node id="4810709003749333392" at="36,0,43,0" concept="4" trace="fromInternalValue#(Ljava/lang/String;)Ljava/lang/String;" />
       <node id="4810709003749333392" at="10,0,23,0" concept="4" trace="canSetValue#(Ljava/lang/String;)Z" />
       <node id="4810709003749333392" at="23,0,36,0" concept="4" trace="toInternalValue#(Ljava/lang/String;)Ljava/lang/String;" />
@@ -128,7 +128,7 @@
       <scope id="4810709003749333392" at="23,0,36,0">
         <var name="value" id="4810709003749333392" />
       </scope>
-      <unit id="4810709003749333392" at="9,0,44,0" name="ArduinoML.structure.LCDSLOT_PropertySupport" />
+      <unit id="4810709003749333392" at="9,0,44,0" name="ArduinoML.structure.LCDBUS_PropertySupport" />
     </file>
   </root>
   <root nodeRef="r:c3495eae-2a50-4eb5-87a2-5e8ab67ad9fe(ArduinoML.structure)/6483884641801182769">

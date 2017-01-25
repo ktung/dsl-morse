@@ -22,8 +22,7 @@ public class Sensor_Editor extends DefaultNodeEditor {
     editorCell.setBig(true);
     editorCell.addEditorCell(this.createConstant_qb70eh_a0(editorContext, node));
     editorCell.addEditorCell(this.createProperty_qb70eh_b0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_qb70eh_c0(editorContext, node));
-    editorCell.addEditorCell(this.createProperty_qb70eh_d0(editorContext, node));
+    editorCell.addEditorCell(this.createProperty_qb70eh_c0(editorContext, node));
     return editorCell;
   }
   private EditorCell createConstant_qb70eh_a0(EditorContext editorContext, SNode node) {
@@ -47,13 +46,7 @@ public class Sensor_Editor extends DefaultNodeEditor {
     } else
     return editorCell;
   }
-  private EditorCell createConstant_qb70eh_c0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, ":");
-    editorCell.setCellId("Constant_qb70eh_c0");
-    editorCell.setDefaultText("");
-    return editorCell;
-  }
-  private EditorCell createProperty_qb70eh_d0(EditorContext editorContext, SNode node) {
+  private EditorCell createProperty_qb70eh_c0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
     provider.setRole("pin");
     provider.setNoTargetText("<no pin>");

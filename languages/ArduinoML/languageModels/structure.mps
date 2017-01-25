@@ -88,6 +88,11 @@
     <property role="19KtqR" value="true" />
     <property role="EcuMT" value="8218746718699866925" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="7gRhwPyPx2w" role="1TKVEl">
+      <property role="IQ2nx" value="8374239055425441952" />
+      <property role="TrG5h" value="play" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
     <node concept="1TJgyj" id="78eQDyb0UqM" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="bricks" />
@@ -101,6 +106,13 @@
       <property role="20kJfa" value="lcd" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="4b34_B6g58N" resolve="Lcd" />
+    </node>
+    <node concept="1TJgyj" id="7gRhwPyPx2e" role="1TKVEi">
+      <property role="IQ2ns" value="8374239055425441934" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="quizzes" />
+      <property role="20lbJX" value="1..n" />
+      <ref role="20lvS9" node="4b34_B6gacj" resolve="Quizz" />
     </node>
     <node concept="PrWs8" id="78eQDyb2T_e" role="PzmwI">
       <ref role="PrY4T" to="4fqr:431DWIovi3l" resolve="IMainClass" />
@@ -191,25 +203,25 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="4b34_B6g59f" role="1TKVEl">
       <property role="IQ2nx" value="4810709003749315151" />
-      <property role="TrG5h" value="slot" />
-      <ref role="AX2Wp" node="4b34_B6g9Ag" resolve="LCDSLOT" />
+      <property role="TrG5h" value="bus" />
+      <ref role="AX2Wp" node="4b34_B6g9Ag" resolve="LCDBUS" />
     </node>
   </node>
   <node concept="AxPO7" id="4b34_B6g9Ag">
-    <property role="TrG5h" value="LCDSLOT" />
+    <property role="TrG5h" value="LCDBUS" />
     <property role="PDuV0" value="true" />
-    <ref role="M4eZT" to="tpck:fKAQMTB" resolve="boolean" />
+    <ref role="M4eZT" to="tpck:fKAOsGN" resolve="string" />
     <node concept="M4N5e" id="4b34_B6g9Ah" role="M5hS2">
-      <property role="1uS6qo" value="SLOT1" />
-      <property role="1uS6qv" value="12, 11, 5, 4, 3, 2" />
+      <property role="1uS6qo" value="BUS1" />
+      <property role="1uS6qv" value="2, 3, 4, 5, 6, 7, 8" />
     </node>
     <node concept="M4N5e" id="4b34_B6g9AI" role="M5hS2">
-      <property role="1uS6qv" value="7890" />
-      <property role="1uS6qo" value="SLOT2" />
+      <property role="1uS6qo" value="BUS2" />
+      <property role="1uS6qv" value="10, 11, 12, 13, 14, 15, 16" />
     </node>
     <node concept="M4N5e" id="4b34_B6g9AL" role="M5hS2">
-      <property role="1uS6qv" value="3456789" />
-      <property role="1uS6qo" value="SLOT3" />
+      <property role="1uS6qo" value="BUS3" />
+      <property role="1uS6qv" value="12, 11, 5, 4, 3, 2" />
     </node>
   </node>
   <node concept="1TIwiD" id="4b34_B6gacj">
@@ -222,6 +234,9 @@
       <property role="20kJfa" value="words" />
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="4b34_B6gacJ" resolve="Word" />
+    </node>
+    <node concept="PrWs8" id="7gRhwPyPx2m" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
   <node concept="1TIwiD" id="4b34_B6gacJ">

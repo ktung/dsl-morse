@@ -6,14 +6,14 @@ import jetbrains.mps.smodel.PropertySupport;
 import java.util.Iterator;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 
-public class LCDSLOT_PropertySupport extends PropertySupport {
+public class LCDBUS_PropertySupport extends PropertySupport {
   public boolean canSetValue(String value) {
     if (value == null) {
       return true;
     }
-    Iterator<LCDSLOT> constants = ListSequence.fromList(LCDSLOT.getConstants()).iterator();
+    Iterator<LCDBUS> constants = ListSequence.fromList(LCDBUS.getConstants()).iterator();
     while (constants.hasNext()) {
-      LCDSLOT constant = constants.next();
+      LCDBUS constant = constants.next();
       if (value.equals(constant.getName())) {
         return true;
       }
@@ -24,9 +24,9 @@ public class LCDSLOT_PropertySupport extends PropertySupport {
     if (value == null) {
       return null;
     }
-    Iterator<LCDSLOT> constants = ListSequence.fromList(LCDSLOT.getConstants()).iterator();
+    Iterator<LCDBUS> constants = ListSequence.fromList(LCDBUS.getConstants()).iterator();
     while (constants.hasNext()) {
-      LCDSLOT constant = constants.next();
+      LCDBUS constant = constants.next();
       if (value.equals(constant.getName())) {
         return constant.getValueAsString();
       }
@@ -34,7 +34,7 @@ public class LCDSLOT_PropertySupport extends PropertySupport {
     return null;
   }
   public String fromInternalValue(String value) {
-    LCDSLOT constant = LCDSLOT.parseValue(value);
+    LCDBUS constant = LCDBUS.parseValue(value);
     if (constant != null) {
       return constant.getName();
     }
