@@ -26,8 +26,9 @@
       <concept id="8218746718699866925" name="ArduinoML.structure.App" flags="ng" index="3T3p6P">
         <property id="8374239055425441952" name="play" index="mSlqH" />
         <child id="4810709003749335972" name="lcd" index="24wV7X" />
+        <child id="8374239055426698703" name="led" index="mRBJ2" />
         <child id="8374239055425441934" name="quizzes" index="mSlq3" />
-        <child id="8218746718699890354" name="bricks" index="3T3nKE" />
+        <child id="8218746718699890354" name="button" index="3T3nKE" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -39,16 +40,8 @@
   <node concept="3T3p6P" id="7gRhwPyQ2Bm">
     <property role="mSlqH" value="Main" />
     <property role="TrG5h" value="Morse" />
-    <node concept="3T3p6N" id="7gRhwPyQ7c4" role="3T3nKE">
-      <property role="TrG5h" value="led" />
-      <property role="3T3nKM" value="12" />
-    </node>
-    <node concept="3T334G" id="7gRhwPyQ7ce" role="3T3nKE">
-      <property role="TrG5h" value="button" />
-      <property role="3T3nKM" value="9" />
-    </node>
     <node concept="24wO1E" id="7gRhwPyQ7bA" role="24wV7X">
-      <property role="24wO0m" value="2, 3, 4, 5, 6, 7, 8" />
+      <property role="24wO0m" value="12, 11, 5, 4, 3, 2" />
     </node>
     <node concept="24wV5a" id="7gRhwPyQvlv" role="mSlq3">
       <property role="TrG5h" value="Main" />
@@ -79,6 +72,14 @@
         <property role="24wV7t" value="MOWGLI" />
         <property role="24wV7v" value="14" />
       </node>
+    </node>
+    <node concept="3T3p6N" id="7gRhwPyULII" role="mRBJ2">
+      <property role="TrG5h" value="led" />
+      <property role="3T3nKM" value="12" />
+    </node>
+    <node concept="3T334G" id="7gRhwPyULIM" role="3T3nKE">
+      <property role="TrG5h" value="button" />
+      <property role="3T3nKM" value="9" />
     </node>
   </node>
 </model>

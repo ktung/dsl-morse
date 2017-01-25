@@ -5,6 +5,7 @@ package ArduinoML.textGen;
 import jetbrains.mps.text.rt.TextGenDescriptorBase;
 import jetbrains.mps.text.rt.TextGenContext;
 import jetbrains.mps.text.impl.TextGenSupport;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import org.jetbrains.mps.openapi.model.SNode;
@@ -13,7 +14,41 @@ public class App_TextGen extends TextGenDescriptorBase {
   @Override
   public void generateText(final TextGenContext ctx) {
     final TextGenSupport tgs = new TextGenSupport(ctx);
+    tgs.append("#define LED ");
+    tgs.append("" + SPropertyOperations.getInteger(SLinkOperations.getTarget(ctx.getPrimaryInput(), MetaAdapterFactory.getContainmentLink(0x5edee0cf46e149f9L, 0x971e6b9e2e5cae16L, 0x720eda988b034b2dL, 0x7437460d62e93dcfL, "led")), MetaAdapterFactory.getProperty(0x5edee0cf46e149f9L, 0x971e6b9e2e5cae16L, 0x720eda988b034b2cL, 0x720eda988b03a6aaL, "pin")));
+    tgs.newLine();
+    tgs.append("#define BUTTTON ");
+    tgs.append("" + SPropertyOperations.getInteger(SLinkOperations.getTarget(ctx.getPrimaryInput(), MetaAdapterFactory.getContainmentLink(0x5edee0cf46e149f9L, 0x971e6b9e2e5cae16L, 0x720eda988b034b2dL, 0x720eda988b03a6b2L, "button")), MetaAdapterFactory.getProperty(0x5edee0cf46e149f9L, 0x971e6b9e2e5cae16L, 0x720eda988b034b2cL, 0x720eda988b03a6aaL, "pin")));
+    tgs.newLine();
+    tgs.newLine();
+    tgs.append("#include \"Morse.h\"");
+    tgs.newLine();
+    tgs.newLine();
     tgs.appendNode(SLinkOperations.getTarget(ctx.getPrimaryInput(), MetaAdapterFactory.getContainmentLink(0x5edee0cf46e149f9L, 0x971e6b9e2e5cae16L, 0x720eda988b034b2dL, 0x42c31259c640a3a4L, "lcd")));
+    tgs.newLine();
+    tgs.newLine();
+    tgs.append("void setup() {");
+    tgs.newLine();
+    ctx.getBuffer().area().increaseIndent();
+    tgs.indent();
+    tgs.append("Serial.begin(9600);");
+    tgs.newLine();
+    tgs.indent();
+    tgs.append("lcd.begin(16,2);");
+    tgs.newLine();
+    tgs.indent();
+    tgs.appendNode(SLinkOperations.getTarget(ctx.getPrimaryInput(), MetaAdapterFactory.getContainmentLink(0x5edee0cf46e149f9L, 0x971e6b9e2e5cae16L, 0x720eda988b034b2dL, 0x720eda988b03a6b2L, "button")));
+    tgs.indent();
+    tgs.appendNode(SLinkOperations.getTarget(ctx.getPrimaryInput(), MetaAdapterFactory.getContainmentLink(0x5edee0cf46e149f9L, 0x971e6b9e2e5cae16L, 0x720eda988b034b2dL, 0x7437460d62e93dcfL, "led")));
+    tgs.indent();
+    tgs.append("digitalWrite(LED,LOW);");
+    tgs.newLine();
+    tgs.indent();
+    tgs.append("resetInputSignal();");
+    ctx.getBuffer().area().decreaseIndent();
+
+    tgs.newLine();
+    tgs.append("}");
   }
   public String getFilename(SNode node) {
     return "App";

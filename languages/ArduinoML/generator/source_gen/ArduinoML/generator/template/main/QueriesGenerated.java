@@ -47,9 +47,6 @@ public class QueriesGenerated {
     _context.putSessionObject("current_state_name", SPropertyOperations.getString(_context.getNode(), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
     return SLinkOperations.getTarget(_context.getNode(), MetaAdapterFactory.getContainmentLink(0x5edee0cf46e149f9L, 0x971e6b9e2e5cae16L, 0x59fb62ba872b962eL, 0x59fb62ba872b9ea0L, "transition"));
   }
-  public static Iterable<SNode> sourceNodesQuery_7429787088013234542(final SourceSubstituteMacroNodesContext _context) {
-    return SLinkOperations.getChildren(_context.getNode(), MetaAdapterFactory.getContainmentLink(0x5edee0cf46e149f9L, 0x971e6b9e2e5cae16L, 0x720eda988b034b2dL, 0x720eda988b03a6b2L, "bricks"));
-  }
   public static Iterable<SNode> sourceNodesQuery_6483884641801785287(final SourceSubstituteMacroNodesContext _context) {
     return SLinkOperations.getChildren(_context.getNode(), MetaAdapterFactory.getContainmentLink(0x5edee0cf46e149f9L, 0x971e6b9e2e5cae16L, 0x59fb62ba872b962eL, 0x59fb62ba872b9e8aL, "actions"));
   }

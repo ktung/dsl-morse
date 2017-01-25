@@ -1,28 +1,3 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<debug-info version="2">
-  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
-  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
-  <root nodeRef="r:ee7059f0-5334-4193-b87b-3b710f3975bb(ArduinoML.sandbox)/8374239055425579478">
-    <file name="map_App.java">
-      <node id="8374239055425579478" at="8,42,9,59" concept="0" />
-      <node id="8374239055425579478" at="9,59,10,0" concept="1" />
-      <node id="8374239055425579478" at="10,0,11,49" concept="0" />
-      <node id="8374239055425579478" at="11,49,12,41" concept="0" />
-      <node id="8374239055425598212" at="12,41,13,57" concept="0" />
-      <node id="8374239055425598222" at="13,57,14,55" concept="0" />
-      <node id="8374239055425579478" at="14,55,15,57" concept="0" />
-      <node id="8374239055425579478" at="15,57,16,28" concept="0" />
-      <node id="8374239055425579478" at="16,28,17,0" concept="1" />
-      <node id="8374239055425579478" at="17,0,18,51" concept="0" />
-      <node id="8374239055425579478" at="18,51,19,64" concept="0" />
-      <node id="8374239055425579478" at="8,0,21,0" concept="2" trace="main#([Ljava/lang/String;)V" />
-      <scope id="8374239055425579478" at="8,42,19,64" />
-      <scope id="8374239055425579478" at="8,0,21,0">
-        <var name="args" id="8374239055425579478" />
-      </scope>
-      <unit id="8374239055425579478" at="6,0,22,0" name="ArduinoML.sandbox.map_App" />
-    </file>
-  </root>
-</debug-info>
+<debug-info version="2" />
 

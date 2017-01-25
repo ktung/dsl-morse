@@ -229,16 +229,36 @@
             <property role="VOm3f" value="true" />
           </node>
         </node>
-        <node concept="3F2HdR" id="7gRhwPyPP0W" role="3EZMnx">
-          <ref role="1NtTu8" to="67j:78eQDyb0UqM" resolve="bricks" />
-          <node concept="l2Vlx" id="7gRhwPyPP0X" role="2czzBx" />
-          <node concept="pj6Ft" id="7gRhwPyPP0Y" role="3F10Kt">
+        <node concept="3F0ifn" id="7gRhwPyUDc7" role="3EZMnx">
+          <property role="3F0ifm" value="button" />
+          <node concept="lj46D" id="7gRhwPyUDeo" role="3F10Kt">
             <property role="VOm3f" value="true" />
           </node>
-          <node concept="lj46D" id="7gRhwPyPP0Z" role="3F10Kt">
+        </node>
+        <node concept="3F0ifn" id="7gRhwPyUDcR" role="3EZMnx">
+          <property role="3F0ifm" value=":" />
+        </node>
+        <node concept="3F1sOY" id="7gRhwPyUDdT" role="3EZMnx">
+          <ref role="1NtTu8" to="67j:78eQDyb0UqM" resolve="button" />
+          <node concept="ljvvj" id="7gRhwPyUDel" role="3F10Kt">
             <property role="VOm3f" value="true" />
           </node>
-          <node concept="ljvvj" id="7gRhwPyPP10" role="3F10Kt">
+        </node>
+        <node concept="3F0ifn" id="7gRhwPyUDeW" role="3EZMnx">
+          <property role="3F0ifm" value="led" />
+          <node concept="lj46D" id="7gRhwPyUDh$" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+        </node>
+        <node concept="3F0ifn" id="7gRhwPyUDfV" role="3EZMnx">
+          <property role="3F0ifm" value=":" />
+        </node>
+        <node concept="3F1sOY" id="7gRhwPyUDgV" role="3EZMnx">
+          <ref role="1NtTu8" to="67j:7gRhwPyUjRf" resolve="led" />
+          <node concept="ljvvj" id="7gRhwPyUDhs" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+          <node concept="lj46D" id="7gRhwPyUDhv" role="3F10Kt">
             <property role="VOm3f" value="true" />
           </node>
         </node>
