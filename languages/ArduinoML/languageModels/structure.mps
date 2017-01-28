@@ -98,14 +98,14 @@
       <property role="20kJfa" value="button" />
       <property role="20lbJX" value="1" />
       <property role="IQ2ns" value="8218746718699890354" />
-      <ref role="20lvS9" node="78eQDyb0OGG" resolve="Brick" />
+      <ref role="20lvS9" node="78eQDyb0IIO" resolve="Sensor" />
     </node>
     <node concept="1TJgyj" id="7gRhwPyUjRf" role="1TKVEi">
       <property role="IQ2ns" value="8374239055426698703" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="led" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="78eQDyb0OGG" resolve="Brick" />
+      <ref role="20lvS9" node="78eQDyb0OGF" resolve="Actuator" />
     </node>
     <node concept="1TJgyj" id="4b34_B6gae$" role="1TKVEi">
       <property role="IQ2ns" value="4810709003749335972" />

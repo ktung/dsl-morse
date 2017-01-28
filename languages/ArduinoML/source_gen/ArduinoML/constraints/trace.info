@@ -1,8 +1,149 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1144231330558:jetbrains.mps.baseLanguage.structure.ForStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
   <root>
     <file name="ConstraintsAspectDescriptor.java">
-      <unit at="12,0,39,0" name="ArduinoML.constraints.ConstraintsAspectDescriptor" />
+      <unit at="13,0,50,0" name="ArduinoML.constraints.ConstraintsAspectDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:d79d2cda-3667-41d9-9202-b2af5f45b79f(ArduinoML.constraints)/1590642702903970549">
+    <file name="Lcd_Constraints.java">
+      <node id="1590642702903970549" at="17,28,18,131" concept="10" />
+      <node id="1590642702903970549" at="22,43,23,16" concept="6" />
+      <node id="1590642702903970549" at="26,200,27,96" concept="5" />
+      <node id="1590642702903970549" at="27,96,28,0" concept="7" />
+      <node id="1590642702903970549" at="29,51,30,67" concept="1" />
+      <node id="1590642702903970549" at="31,5,32,0" concept="7" />
+      <node id="1590642702903970549" at="32,0,33,18" concept="6" />
+      <node id="1590642702903993276" at="36,175,37,19" concept="6" />
+      <node id="1590642702903997987" at="38,5,39,206" concept="5" />
+      <node id="1590642702904187994" at="39,206,40,327" concept="5" />
+      <node id="1590642702904246670" at="40,327,41,333" concept="5" />
+      <node id="1590642702904352992" at="43,388,44,21" concept="6" />
+      <node id="1590642702904358538" at="46,5,47,16" concept="6" />
+      <node id="1590642702903970549" at="49,0,50,0" concept="8" trace="canBeChildBreakingPoint" />
+      <node id="1590642702903970549" at="17,0,20,0" concept="0" trace="Lcd_Constraints#()V" />
+      <node id="1590642702903970549" at="28,0,31,5" concept="3" />
+      <node id="1590642702903985683" at="35,148,38,5" concept="3" />
+      <node id="1590642702904230195" at="42,48,45,7" concept="3" />
+      <node id="1590642702903970549" at="21,0,25,0" concept="4" trace="hasOwnCanBeChildMethod#()Z" />
+      <node id="1590642702904204844" at="41,333,46,5" concept="2" />
+      <node id="1590642702903970549" at="25,0,35,0" concept="4" trace="canBeChild#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Z" />
+      <node id="1590642702903970549" at="35,0,49,0" concept="9" trace="static_canBeAChild#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/smodel/IOperationContext;)Z" />
+      <scope id="1590642702903970549" at="17,28,18,131" />
+      <scope id="1590642702903970549" at="22,43,23,16" />
+      <scope id="1590642702903970549" at="29,51,30,67" />
+      <scope id="1590642702903985685" at="36,175,37,19" />
+      <scope id="1590642702904230197" at="43,388,44,21" />
+      <scope id="1590642702903970549" at="17,0,20,0" />
+      <scope id="1590642702904204846" at="42,48,45,7" />
+      <scope id="1590642702903970549" at="21,0,25,0" />
+      <scope id="1590642702904204844" at="41,333,46,5">
+        <var name="i" id="1590642702904204847" />
+      </scope>
+      <scope id="1590642702903970549" at="26,200,33,18">
+        <var name="result" id="1590642702903970549" />
+      </scope>
+      <scope id="1590642702903970549" at="25,0,35,0">
+        <var name="checkingNodeContext" id="1590642702903970549" />
+        <var name="childConcept" id="1590642702903970549" />
+        <var name="link" id="1590642702903970549" />
+        <var name="node" id="1590642702903970549" />
+        <var name="operationContext" id="1590642702903970549" />
+        <var name="parentNode" id="1590642702903970549" />
+      </scope>
+      <scope id="1590642702903970551" at="35,148,47,16">
+        <var name="busValues" id="1590642702903997990" />
+        <var name="button" id="1590642702904246673" />
+        <var name="led" id="1590642702904187997" />
+      </scope>
+      <scope id="1590642702903970549" at="35,0,49,0">
+        <var name="childConcept" id="1590642702903970549" />
+        <var name="link" id="1590642702903970549" />
+        <var name="node" id="1590642702903970549" />
+        <var name="operationContext" id="1590642702903970549" />
+        <var name="parentNode" id="1590642702903970549" />
+      </scope>
+      <unit id="1590642702903970549" at="16,0,51,0" name="ArduinoML.constraints.Lcd_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:d79d2cda-3667-41d9-9202-b2af5f45b79f(ArduinoML.constraints)/1590642702904364642">
+    <file name="Brick_Constraints.java">
+      <node id="1590642702904364642" at="17,30,18,133" concept="10" />
+      <node id="1590642702904364642" at="22,43,23,16" concept="6" />
+      <node id="1590642702904364642" at="26,200,27,96" concept="5" />
+      <node id="1590642702904364642" at="27,96,28,0" concept="7" />
+      <node id="1590642702904364642" at="29,51,30,67" concept="1" />
+      <node id="1590642702904364642" at="31,5,32,0" concept="7" />
+      <node id="1590642702904364642" at="32,0,33,18" concept="6" />
+      <node id="1590642702904457584" at="36,175,37,19" concept="6" />
+      <node id="1590642702904460907" at="38,5,39,333" concept="5" />
+      <node id="1590642702904500864" at="40,643,41,19" concept="6" />
+      <node id="1590642702904469669" at="42,5,43,327" concept="5" />
+      <node id="1590642702904519735" at="44,637,45,19" concept="6" />
+      <node id="1590642702904477584" at="46,5,47,327" concept="5" />
+      <node id="1590642702904531773" at="47,327,48,205" concept="5" />
+      <node id="1590642702904598767" at="50,198,51,21" concept="6" />
+      <node id="1590642702904459445" at="53,5,54,16" concept="6" />
+      <node id="1590642702904364642" at="56,0,57,0" concept="8" trace="canBeChildBreakingPoint" />
+      <node id="1590642702904364642" at="17,0,20,0" concept="0" trace="Brick_Constraints#()V" />
+      <node id="1590642702904364642" at="28,0,31,5" concept="3" />
+      <node id="1590642702904453334" at="35,148,38,5" concept="3" />
+      <node id="1590642702904486409" at="39,333,42,5" concept="3" />
+      <node id="1590642702904503103" at="43,327,46,5" concept="3" />
+      <node id="1590642702904571426" at="49,48,52,7" concept="3" />
+      <node id="1590642702904364642" at="21,0,25,0" concept="4" trace="hasOwnCanBeChildMethod#()Z" />
+      <node id="1590642702904522322" at="48,205,53,5" concept="2" />
+      <node id="1590642702904364642" at="25,0,35,0" concept="4" trace="canBeChild#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Z" />
+      <node id="1590642702904364642" at="35,0,56,0" concept="9" trace="static_canBeAChild#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/smodel/IOperationContext;)Z" />
+      <scope id="1590642702904364642" at="17,30,18,133" />
+      <scope id="1590642702904364642" at="22,43,23,16" />
+      <scope id="1590642702904364642" at="29,51,30,67" />
+      <scope id="1590642702904453336" at="36,175,37,19" />
+      <scope id="1590642702904486411" at="40,643,41,19" />
+      <scope id="1590642702904503105" at="44,637,45,19" />
+      <scope id="1590642702904571428" at="50,198,51,21" />
+      <scope id="1590642702904364642" at="17,0,20,0" />
+      <scope id="1590642702904522324" at="49,48,52,7" />
+      <scope id="1590642702904364642" at="21,0,25,0" />
+      <scope id="1590642702904522322" at="48,205,53,5">
+        <var name="i" id="1590642702904522325" />
+      </scope>
+      <scope id="1590642702904364642" at="26,200,33,18">
+        <var name="result" id="1590642702904364642" />
+      </scope>
+      <scope id="1590642702904364642" at="25,0,35,0">
+        <var name="checkingNodeContext" id="1590642702904364642" />
+        <var name="childConcept" id="1590642702904364642" />
+        <var name="link" id="1590642702904364642" />
+        <var name="node" id="1590642702904364642" />
+        <var name="operationContext" id="1590642702904364642" />
+        <var name="parentNode" id="1590642702904364642" />
+      </scope>
+      <scope id="1590642702904452878" at="35,148,54,16">
+        <var name="busValues" id="1590642702904531776" />
+        <var name="button" id="1590642702904460910" />
+        <var name="lcd" id="1590642702904477587" />
+        <var name="led" id="1590642702904469672" />
+      </scope>
+      <scope id="1590642702904364642" at="35,0,56,0">
+        <var name="childConcept" id="1590642702904364642" />
+        <var name="link" id="1590642702904364642" />
+        <var name="node" id="1590642702904364642" />
+        <var name="operationContext" id="1590642702904364642" />
+        <var name="parentNode" id="1590642702904364642" />
+      </scope>
+      <unit id="1590642702904364642" at="16,0,58,0" name="ArduinoML.constraints.Brick_Constraints" />
     </file>
   </root>
 </debug-info>

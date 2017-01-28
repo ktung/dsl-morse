@@ -41,7 +41,7 @@
     <property role="mSlqH" value="Main" />
     <property role="TrG5h" value="Morse" />
     <node concept="24wO1E" id="7gRhwPyQ7bA" role="24wV7X">
-      <property role="24wO0m" value="12, 11, 5, 4, 3, 2" />
+      <property role="24wO0m" value="2, 3, 4, 5, 6, 7, 8" />
     </node>
     <node concept="24wV5a" id="7gRhwPyQvlv" role="mSlq3">
       <property role="TrG5h" value="Main" />
@@ -75,7 +75,7 @@
     </node>
     <node concept="3T3p6N" id="7gRhwPyULII" role="mRBJ2">
       <property role="TrG5h" value="led" />
-      <property role="3T3nKM" value="12" />
+      <property role="3T3nKM" value="11" />
     </node>
     <node concept="3T334G" id="7gRhwPyULIM" role="3T3nKE">
       <property role="TrG5h" value="button" />

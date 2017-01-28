@@ -48,6 +48,39 @@ public class App_TextGen extends TextGenDescriptorBase {
     ctx.getBuffer().area().decreaseIndent();
 
     tgs.newLine();
+    tgs.newLine();
+    tgs.append("void loop() {");
+    tgs.newLine();
+    ctx.getBuffer().area().increaseIndent();
+    tgs.indent();
+    tgs.append("String quizz;");
+    tgs.newLine();
+    tgs.indent();
+    tgs.append("while(quizz.length() < 2) {");
+    tgs.newLine();
+    tgs.indent();
+    tgs.indent();
+    tgs.append("quizz = Serial.readStringUntil(';');");
+    tgs.newLine();
+    tgs.indent();
+    tgs.append("}");
+    tgs.indent();
+    tgs.append("Serial.write(\"Ready\");");
+    tgs.newLine();
+    tgs.indent();
+    tgs.append("String msgScore = \"Score:\"+String(score);");
+    tgs.newLine();
+    tgs.indent();
+    tgs.append("lcd.print(msgScore);");
+    tgs.newLine();
+    tgs.indent();
+    tgs.append("String msgQuizz = quizz + \" = \";");
+    tgs.newLine();
+    tgs.indent();
+    tgs.append("lcd.setCursor(0,1);");
+    ctx.getBuffer().area().decreaseIndent();
+
+    tgs.newLine();
     tgs.append("}");
   }
   public String getFilename(SNode node) {

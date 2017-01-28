@@ -16,6 +16,9 @@ print word, score
 del disney[word]
 print disney
 
+word, score = disney.popitem()
+print word, score
+
 # Pour le mix, je ne vois pas comment mélanger les éléments dans le dictionnaire
 main = {"sos":10, "hello":5, "bonjour": 2}
 mix = disney.copy()
