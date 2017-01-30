@@ -1,15 +1,75 @@
-#define LED 12
+#define LED 11
 #define BUTTTON 9
 
 #include "Morse.h"
 
-LiquidCrystal lcd(12, 11, 5, 4, 3, 2);
+LiquidCrystal lcd(2, 3, 4, 5, 6, 7, 8);
 
 void setup() {
   Serial.begin(9600);
   lcd.begin(16,2);
   pinMode(9, INPUT);
-  pinMode(12, OUTPUT);
+  pinMode(11, OUTPUT);
   digitalWrite(LED,LOW);
   resetInputSignal();
+
+void loop() {
+  String quizz;
+  while(quizz.length() < 2) {
+    quizz = Serial.readStringUntil(';');
+  }  Serial.write("Ready");
+  String msgScore = "Score:"+String(score);
+  lcd.print(msgScore);
+  String msgQuizz = quizz + " = ";
+  lcd.setCursor(0,1);
+  lcd.print(msgQuizz);
+  lcd.cursor();
+  String answer = "";
+  long duration = 0;  while (answer.length() < quizz.length()) {
+    long currentTimestamp = millis();
+    duration = currentTimestamp - lastTimestamp;
+    if (digitalRead(BUTTON) == HIGH) {
+      if (!buttonWasPressed) {
+        buttonWasPressed = true;
+        digitalWrite(LED, HIGH);
+        lastTimestamp = currentTimestamp;
+      }
+    } else {
+      if (buttonWasPressed){
+        if (duration < DOT_DURATION) {
+          inputSignal[inputSignalIndex] = DOT;
+        } else {
+          inputSignal[inputSignalIndex] = DASH;
+        }
+        inputSignalIndex++;
+        digitalWrite(LED, LOW);
+        buttonWasPressed = false;
+        lastTimestamp = currentTimestamp;
+      } else {
+        if (inputSignalIndex > 0 {
+          if (duration > SIGNAL_GAP || inputSignalIndex >= 4 {
+            char letter = currentInputSignalToLetter();
+            answer += letter;
+            resetInputSignal();
+            lcd.print(letter);
+          }
+        }
+      }
+    }
+  }
+
+  if (quizz.equals(answer)) {
+    Serial.write("OK");
+  } else {
+    Serial.write("KO");
+  }
+
+  delay(1000);
+  lcd.clear();
+  String scoreAnswer = "";
+  while (scoreAnswer.length() < 1){
+    scoreAnswer= Serial.readStringUntil(';');
+  }
+  Serial.write("Score");
+  score = scoreAnswer.toInt()
 }
