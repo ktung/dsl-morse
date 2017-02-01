@@ -128,7 +128,7 @@
         </node>
         <node concept="lc7rE" id="7gRhwPyUVQ8" role="3cqZAp">
           <node concept="la8eA" id="7gRhwPyUW54" role="lcghm">
-            <property role="lacIc" value="#define BUTTTON " />
+            <property role="lacIc" value="#define BUTTON " />
           </node>
           <node concept="l9hG8" id="7gRhwPyUWwp" role="lcghm">
             <node concept="3cpWs3" id="7gRhwPyUXld" role="lb14g">
@@ -227,9 +227,14 @@
                 <property role="lacIc" value="resetInputSignal();" />
               </node>
             </node>
+            <node concept="lc7rE" id="pLujeK2$ti" role="3cqZAp">
+              <node concept="la8eA" id="pLujeK2$_a" role="lcghm">
+                <property role="lacIc" value="}" />
+              </node>
+            </node>
           </node>
         </node>
-        <node concept="3clFbH" id="7gRhwPyVsJ4" role="3cqZAp" />
+        <node concept="3clFbH" id="pLujeK2ykK" role="3cqZAp" />
         <node concept="lc7rE" id="7gRhwPyVsZP" role="3cqZAp">
           <node concept="l8MVK" id="7gRhwPyVtfy" role="lcghm" />
           <node concept="l8MVK" id="7gRhwPyVtgc" role="lcghm" />
@@ -535,7 +540,7 @@
               <node concept="2BGw6n" id="5VvnvP7gh90" role="lcghm" />
               <node concept="2BGw6n" id="5VvnvP7gh9g" role="lcghm" />
               <node concept="la8eA" id="5VvnvP7gha9" role="lcghm">
-                <property role="lacIc" value="if (inputSignalIndex &gt; 0 {" />
+                <property role="lacIc" value="if (inputSignalIndex &gt; 0 ) {" />
               </node>
               <node concept="l8MVK" id="5VvnvP7gheU" role="lcghm" />
             </node>
