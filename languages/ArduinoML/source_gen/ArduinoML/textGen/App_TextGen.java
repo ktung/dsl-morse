@@ -8,6 +8,8 @@ import jetbrains.mps.text.impl.TextGenSupport;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
+import jetbrains.mps.internal.collections.runtime.ListSequence;
+import jetbrains.mps.internal.collections.runtime.IVisitor;
 import org.jetbrains.mps.openapi.model.SNode;
 
 public class App_TextGen extends TextGenDescriptorBase {
@@ -17,7 +19,7 @@ public class App_TextGen extends TextGenDescriptorBase {
     tgs.append("#define LED ");
     tgs.append("" + SPropertyOperations.getInteger(SLinkOperations.getTarget(ctx.getPrimaryInput(), MetaAdapterFactory.getContainmentLink(0x5edee0cf46e149f9L, 0x971e6b9e2e5cae16L, 0x720eda988b034b2dL, 0x7437460d62e93dcfL, "led")), MetaAdapterFactory.getProperty(0x5edee0cf46e149f9L, 0x971e6b9e2e5cae16L, 0x720eda988b034b2cL, 0x720eda988b03a6aaL, "pin")));
     tgs.newLine();
-    tgs.append("#define BUTTTON ");
+    tgs.append("#define BUTTON ");
     tgs.append("" + SPropertyOperations.getInteger(SLinkOperations.getTarget(ctx.getPrimaryInput(), MetaAdapterFactory.getContainmentLink(0x5edee0cf46e149f9L, 0x971e6b9e2e5cae16L, 0x720eda988b034b2dL, 0x720eda988b03a6b2L, "button")), MetaAdapterFactory.getProperty(0x5edee0cf46e149f9L, 0x971e6b9e2e5cae16L, 0x720eda988b034b2cL, 0x720eda988b03a6aaL, "pin")));
     tgs.newLine();
     tgs.newLine();
@@ -45,6 +47,7 @@ public class App_TextGen extends TextGenDescriptorBase {
     tgs.newLine();
     tgs.indent();
     tgs.append("resetInputSignal();");
+    tgs.append("}");
     ctx.getBuffer().area().decreaseIndent();
 
     tgs.newLine();
@@ -209,14 +212,14 @@ public class App_TextGen extends TextGenDescriptorBase {
     tgs.indent();
     tgs.indent();
     tgs.indent();
-    tgs.append("if (inputSignalIndex > 0 {");
+    tgs.append("if (inputSignalIndex > 0 ) {");
     tgs.newLine();
     tgs.indent();
     tgs.indent();
     tgs.indent();
     tgs.indent();
     tgs.indent();
-    tgs.append("if (duration > SIGNAL_GAP || inputSignalIndex >= 4 {");
+    tgs.append("if (duration > SIGNAL_GAP || inputSignalIndex >= 4 ) {");
     tgs.newLine();
     tgs.indent();
     tgs.indent();
@@ -320,12 +323,116 @@ public class App_TextGen extends TextGenDescriptorBase {
     tgs.append("Serial.write(\"Score\");");
     tgs.newLine();
     tgs.indent();
-    tgs.append("score = scoreAnswer.toInt()");
+    tgs.append("score = scoreAnswer.toInt();");
 
     ctx.getBuffer().area().decreaseIndent();
-
     tgs.newLine();
     tgs.append("}");
+
+    tgs.newLine();
+    tgs.newLine();
+    tgs.append("-------------------------------------------------------------------------------------------");
+    tgs.newLine();
+    tgs.append("========================================= PYTHON ==========================================");
+    tgs.newLine();
+    tgs.append("-------------------------------------------------------------------------------------------");
+    tgs.newLine();
+    tgs.newLine();
+
+    tgs.append("import sys");
+    tgs.newLine();
+    tgs.append("import serial");
+    tgs.newLine();
+    tgs.append("import random");
+    tgs.newLine();
+    tgs.append("import collections");
+    tgs.newLine();
+    tgs.newLine();
+
+    ListSequence.fromList(SLinkOperations.getChildren(ctx.getPrimaryInput(), MetaAdapterFactory.getContainmentLink(0x5edee0cf46e149f9L, 0x971e6b9e2e5cae16L, 0x720eda988b034b2dL, 0x7437460d62d6108eL, "quizzes"))).visitAll(new IVisitor<SNode>() {
+      public void visit(SNode it) {
+        tgs.appendNode(it);
+        tgs.newLine();
+      }
+    });
+    tgs.newLine();
+    tgs.append("score = 0");
+    tgs.newLine();
+    tgs.append("arduino = serial.Serial('/dev/ttyACM0', 9600) ");
+    tgs.newLine();
+    tgs.append("arduino.timeout = 1.4");
+    tgs.newLine();
+
+    tgs.append("while len(");
+    tgs.append(SPropertyOperations.getString(ctx.getPrimaryInput(), MetaAdapterFactory.getProperty(0x5edee0cf46e149f9L, 0x971e6b9e2e5cae16L, 0x720eda988b034b2dL, 0x7437460d62d610a0L, "play")));
+    tgs.append(") != 0: ");
+    tgs.newLine();
+    ctx.getBuffer().area().increaseIndent();
+    tgs.indent();
+    tgs.append("word, wordScore = random.choice(list(");
+    tgs.append(SPropertyOperations.getString(ctx.getPrimaryInput(), MetaAdapterFactory.getProperty(0x5edee0cf46e149f9L, 0x971e6b9e2e5cae16L, 0x720eda988b034b2dL, 0x7437460d62d610a0L, "play")));
+    tgs.append(".items()))");
+    tgs.newLine();
+    tgs.indent();
+    tgs.append("del ");
+    tgs.append(SPropertyOperations.getString(ctx.getPrimaryInput(), MetaAdapterFactory.getProperty(0x5edee0cf46e149f9L, 0x971e6b9e2e5cae16L, 0x720eda988b034b2dL, 0x7437460d62d610a0L, "play")));
+    tgs.append("[word]");
+    tgs.newLine();
+    tgs.indent();
+    tgs.append("response = ''");
+    tgs.newLine();
+    tgs.indent();
+    tgs.append("while(\"Ready\" not in response):");
+    tgs.newLine();
+    tgs.indent();
+    tgs.indent();
+    tgs.append("arduino.write(word+\";\")");
+    tgs.newLine();
+    tgs.indent();
+    tgs.indent();
+    tgs.append("response = arduino.readline()");
+    tgs.newLine();
+    tgs.newLine();
+
+    tgs.indent();
+    tgs.append("while (\"OK\" not in response and \"KO\" not in response):");
+    tgs.newLine();
+    tgs.indent();
+    tgs.indent();
+    tgs.append("response = arduino.readline()");
+    tgs.newLine();
+    tgs.newLine();
+
+    tgs.indent();
+    tgs.append("if \"OK\" in response:");
+    tgs.newLine();
+    tgs.indent();
+    tgs.indent();
+    tgs.append("score += wordScore");
+    tgs.newLine();
+    tgs.indent();
+    tgs.append("else:");
+    tgs.newLine();
+    tgs.indent();
+    tgs.indent();
+    tgs.append("score -= 1");
+    tgs.newLine();
+    tgs.newLine();
+
+    tgs.indent();
+    tgs.append("while(\"Score\" not in response):");
+    tgs.newLine();
+    tgs.indent();
+    tgs.indent();
+    tgs.append("arduino.write(str(score)+\";\")");
+    tgs.newLine();
+    tgs.indent();
+    tgs.indent();
+    tgs.append("response = arduino.readline()");
+    tgs.newLine();
+    tgs.newLine();
+
+    ctx.getBuffer().area().decreaseIndent();
   }
   public String getFilename(SNode node) {
     return "App";

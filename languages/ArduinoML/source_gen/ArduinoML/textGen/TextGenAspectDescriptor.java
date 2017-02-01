@@ -47,6 +47,11 @@ public class TextGenAspectDescriptor extends TextGenAspectBase {
           break;
         case 4:
           if (true) {
+            return new Quizz_TextGen();
+          }
+          break;
+        case 5:
+          if (true) {
             return new Sensor_TextGen();
           }
           break;
@@ -82,5 +87,5 @@ public class TextGenAspectDescriptor extends TextGenAspectBase {
     }
     return res;
   }
-  private static final Map<SAbstractConcept, Integer> indices_t8hmqt_a0c = buildConceptIndices(MetaAdapterFactory.getConcept(0x5edee0cf46e149f9L, 0x971e6b9e2e5cae16L, 0x720eda988b034b2bL, "ArduinoML.structure.Actuator"), MetaAdapterFactory.getConcept(0x5edee0cf46e149f9L, 0x971e6b9e2e5cae16L, 0x720eda988b034b2dL, "ArduinoML.structure.App"), MetaAdapterFactory.getConcept(0x5edee0cf46e149f9L, 0x971e6b9e2e5cae16L, 0x720eda988b034b2cL, "ArduinoML.structure.Brick"), MetaAdapterFactory.getConcept(0x5edee0cf46e149f9L, 0x971e6b9e2e5cae16L, 0x42c31259c6405233L, "ArduinoML.structure.Lcd"), MetaAdapterFactory.getConcept(0x5edee0cf46e149f9L, 0x971e6b9e2e5cae16L, 0x720eda988b02ebb4L, "ArduinoML.structure.Sensor"));
+  private static final Map<SAbstractConcept, Integer> indices_t8hmqt_a0c = buildConceptIndices(MetaAdapterFactory.getConcept(0x5edee0cf46e149f9L, 0x971e6b9e2e5cae16L, 0x720eda988b034b2bL, "ArduinoML.structure.Actuator"), MetaAdapterFactory.getConcept(0x5edee0cf46e149f9L, 0x971e6b9e2e5cae16L, 0x720eda988b034b2dL, "ArduinoML.structure.App"), MetaAdapterFactory.getConcept(0x5edee0cf46e149f9L, 0x971e6b9e2e5cae16L, 0x720eda988b034b2cL, "ArduinoML.structure.Brick"), MetaAdapterFactory.getConcept(0x5edee0cf46e149f9L, 0x971e6b9e2e5cae16L, 0x42c31259c6405233L, "ArduinoML.structure.Lcd"), MetaAdapterFactory.getConcept(0x5edee0cf46e149f9L, 0x971e6b9e2e5cae16L, 0x42c31259c640a313L, "ArduinoML.structure.Quizz"), MetaAdapterFactory.getConcept(0x5edee0cf46e149f9L, 0x971e6b9e2e5cae16L, 0x720eda988b02ebb4L, "ArduinoML.structure.Sensor"));
 }

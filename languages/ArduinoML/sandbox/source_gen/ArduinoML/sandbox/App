@@ -1,5 +1,5 @@
 #define LED 11
-#define BUTTTON 9
+#define BUTTON 9
 
 #include "Morse.h"
 
@@ -11,7 +11,7 @@ void setup() {
   pinMode(9, INPUT);
   pinMode(11, OUTPUT);
   digitalWrite(LED,LOW);
-  resetInputSignal();
+  resetInputSignal();}
 
 void loop() {
   String quizz;
@@ -46,8 +46,8 @@ void loop() {
         buttonWasPressed = false;
         lastTimestamp = currentTimestamp;
       } else {
-        if (inputSignalIndex > 0 {
-          if (duration > SIGNAL_GAP || inputSignalIndex >= 4 {
+        if (inputSignalIndex > 0 ) {
+          if (duration > SIGNAL_GAP || inputSignalIndex >= 4 ) {
             char letter = currentInputSignalToLetter();
             answer += letter;
             resetInputSignal();
@@ -71,5 +71,41 @@ void loop() {
     scoreAnswer= Serial.readStringUntil(';');
   }
   Serial.write("Score");
-  score = scoreAnswer.toInt()
+  score = scoreAnswer.toInt();
 }
+
+-------------------------------------------------------------------------------------------
+========================================= PYTHON ==========================================
+-------------------------------------------------------------------------------------------
+
+import sys
+import serial
+import random
+import collections
+
+Main =  {"SOS":10,"HELLO":5,"BONJOUR":2,}
+Disney =  {"FROZEN":12,"VAIANA":9,"MOWGLI":14,}
+
+score = 0
+arduino = serial.Serial('/dev/ttyACM0', 9600) 
+arduino.timeout = 1.4
+while len(Main) != 0: 
+  word, wordScore = random.choice(list(Main.items()))
+  del Main[word]
+  response = ''
+  while("Ready" not in response):
+    arduino.write(word+";")
+    response = arduino.readline()
+
+  while ("OK" not in response and "KO" not in response):
+    response = arduino.readline()
+
+  if "OK" in response:
+    score += wordScore
+  else:
+    score -= 1
+
+  while("Score" not in response):
+    arduino.write(str(score)+";")
+    response = arduino.readline()
+
