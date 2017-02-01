@@ -14,7 +14,6 @@
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1082978164219" name="jetbrains.mps.lang.structure.structure.EnumerationDataTypeDeclaration" flags="ng" index="AxPO7">
         <property id="1212080844762" name="hasNoDefaultMember" index="PDuV0" />
-        <property id="1197591154882" name="memberIdentifierPolicy" index="3lZH7k" />
         <reference id="1083171729157" name="memberDataType" index="M4eZT" />
         <child id="1083172003582" name="member" index="M5hS2" />
       </concept>
@@ -128,82 +127,6 @@
     </node>
     <node concept="PrWs8" id="5BVoFE7b1lu" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="5BVoFE7aToI">
-    <property role="TrG5h" value="State" />
-    <property role="EcuMT" value="6483884641801180718" />
-    <node concept="PrWs8" id="5BVoFE7aTCe" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
-    <node concept="1TJgyj" id="5BVoFE7aTUa" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="actions" />
-      <property role="20lbJX" value="0..n" />
-      <property role="IQ2ns" value="6483884641801182858" />
-      <ref role="20lvS9" node="5BVoFE7aTCq" resolve="Action" />
-    </node>
-    <node concept="1TJgyj" id="5BVoFE7aTUw" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="transition" />
-      <property role="20lbJX" value="1" />
-      <property role="IQ2ns" value="6483884641801182880" />
-      <ref role="20lvS9" node="5BVoFE7aTS0" resolve="Transition" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="5BVoFE7aTCq">
-    <property role="TrG5h" value="Action" />
-    <property role="EcuMT" value="6483884641801181722" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyi" id="5BVoFE7aTRU" role="1TKVEl">
-      <property role="TrG5h" value="status" />
-      <property role="IQ2nx" value="6483884641801182714" />
-      <ref role="AX2Wp" node="5BVoFE7aTSL" resolve="STATUS" />
-    </node>
-    <node concept="1TJgyj" id="5BVoFE7aTRW" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="actuator" />
-      <property role="20lbJX" value="1" />
-      <property role="IQ2ns" value="6483884641801182716" />
-      <ref role="20lvS9" node="78eQDyb0OGF" resolve="Actuator" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="5BVoFE7aTS0">
-    <property role="TrG5h" value="Transition" />
-    <property role="EcuMT" value="6483884641801182720" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyi" id="5BVoFE7aTSs" role="1TKVEl">
-      <property role="TrG5h" value="status" />
-      <property role="IQ2nx" value="6483884641801182748" />
-      <ref role="AX2Wp" node="5BVoFE7aTSL" resolve="STATUS" />
-    </node>
-    <node concept="1TJgyj" id="5BVoFE7aTSu" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="sensor" />
-      <property role="20lbJX" value="1" />
-      <property role="IQ2ns" value="6483884641801182750" />
-      <ref role="20lvS9" node="78eQDyb0IIO" resolve="Sensor" />
-    </node>
-    <node concept="1TJgyj" id="5BVoFE7bb5N" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="target" />
-      <property role="20lbJX" value="1" />
-      <property role="IQ2ns" value="6483884641801253235" />
-      <ref role="20lvS9" node="5BVoFE7aToI" resolve="State" />
-    </node>
-  </node>
-  <node concept="AxPO7" id="5BVoFE7aTSL">
-    <property role="TrG5h" value="STATUS" />
-    <property role="PDuV0" value="true" />
-    <property role="3lZH7k" value="derive_from_presentation" />
-    <ref role="M4eZT" to="tpck:fKAQMTB" resolve="boolean" />
-    <node concept="M4N5e" id="5BVoFE7aTSM" role="M5hS2">
-      <property role="1uS6qv" value="true" />
-      <property role="1uS6qo" value="high" />
-    </node>
-    <node concept="M4N5e" id="5BVoFE7aTTe" role="M5hS2">
-      <property role="1uS6qo" value="low" />
-      <property role="1uS6qv" value="false" />
     </node>
   </node>
   <node concept="1TIwiD" id="4b34_B6g58N">
