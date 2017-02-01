@@ -298,11 +298,8 @@
             <property role="VOm3f" value="true" />
           </node>
         </node>
-        <node concept="3F0ifn" id="7gRhwPyPP0L" role="3EZMnx">
-          <property role="3F0ifm" value="PLAY" />
-        </node>
-        <node concept="3F0A7n" id="7gRhwPyPPRP" role="3EZMnx">
-          <ref role="1NtTu8" to="67j:7gRhwPyPx2w" resolve="play" />
+        <node concept="3F1sOY" id="6ZIxELm23Y1" role="3EZMnx">
+          <ref role="1NtTu8" to="67j:6ZIxELm1PGh" resolve="playRules" />
         </node>
         <node concept="ljvvj" id="7gRhwPyQPK$" role="3F10Kt">
           <property role="VOm3f" value="true" />
@@ -389,6 +386,54 @@
       </node>
       <node concept="3F0A7n" id="7gRhwPyQvn1" role="3EZMnx">
         <ref role="1NtTu8" to="67j:4b34_B6gae6" resolve="score" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="6ZIxELm23YX">
+    <ref role="1XX52x" to="67j:6ZIxELm1PFN" resolve="PlayRules" />
+    <node concept="3EZMnI" id="6ZIxELm23YZ" role="2wV5jI">
+      <node concept="l2Vlx" id="6ZIxELm23Z0" role="2iSdaV" />
+      <node concept="3F0ifn" id="6ZIxELm23Z1" role="3EZMnx">
+        <property role="3F0ifm" value="PLAY" />
+      </node>
+      <node concept="3F0A7n" id="6ZIxELm23Z2" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        <node concept="ljvvj" id="6ZIxELm2our" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3EZMnI" id="6ZIxELm23Z6" role="3EZMnx">
+        <node concept="l2Vlx" id="6ZIxELm23Z7" role="2iSdaV" />
+        <node concept="3F0ifn" id="6ZIxELm23Z9" role="3EZMnx">
+          <property role="3F0ifm" value="FAIL" />
+        </node>
+        <node concept="3F0A7n" id="6ZIxELm23Zc" role="3EZMnx">
+          <ref role="1NtTu8" to="67j:6ZIxELm1PFQ" resolve="fail" />
+          <node concept="ljvvj" id="6ZIxELm23Zd" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+        </node>
+        <node concept="3F0ifn" id="6ZIxELm23Ze" role="3EZMnx">
+          <property role="3F0ifm" value="MAXPOINT" />
+        </node>
+        <node concept="3F0A7n" id="6ZIxELm23Zh" role="3EZMnx">
+          <ref role="1NtTu8" to="67j:6ZIxELm1PFS" resolve="maxpoint" />
+          <node concept="ljvvj" id="6ZIxELm23Zi" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+        </node>
+        <node concept="3F0ifn" id="6ZIxELm23Zj" role="3EZMnx">
+          <property role="3F0ifm" value="RETRY" />
+        </node>
+        <node concept="3F0A7n" id="6ZIxELm23Zm" role="3EZMnx">
+          <ref role="1NtTu8" to="67j:6ZIxELm1PFV" resolve="retry" />
+          <node concept="ljvvj" id="6ZIxELm23Zn" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+        </node>
+        <node concept="ljvvj" id="6ZIxELm2efk" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
       </node>
     </node>
   </node>

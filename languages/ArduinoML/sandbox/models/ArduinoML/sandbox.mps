@@ -18,16 +18,21 @@
         <property id="4810709003749335940" name="word" index="24wV7t" />
         <property id="4810709003749335942" name="score" index="24wV7v" />
       </concept>
+      <concept id="8065532057402956531" name="ArduinoML.structure.PlayRules" flags="ng" index="TUtLv">
+        <property id="8065532057402956536" name="maxpoint" index="TUtLk" />
+        <property id="8065532057402956539" name="retry" index="TUtLn" />
+        <property id="8065532057402956534" name="fail" index="TUtLq" />
+      </concept>
       <concept id="8218746718699842484" name="ArduinoML.structure.Sensor" flags="ng" index="3T334G" />
       <concept id="8218746718699866923" name="ArduinoML.structure.Actuator" flags="ng" index="3T3p6N" />
       <concept id="8218746718699866924" name="ArduinoML.structure.Brick" flags="ng" index="3T3p6O">
         <property id="8218746718699890346" name="pin" index="3T3nKM" />
       </concept>
       <concept id="8218746718699866925" name="ArduinoML.structure.App" flags="ng" index="3T3p6P">
-        <property id="8374239055425441952" name="play" index="mSlqH" />
         <child id="4810709003749335972" name="lcd" index="24wV7X" />
         <child id="8374239055426698703" name="led" index="mRBJ2" />
         <child id="8374239055425441934" name="quizzes" index="mSlq3" />
+        <child id="8065532057402956561" name="playRules" index="TUtQX" />
         <child id="8218746718699890354" name="button" index="3T3nKE" />
       </concept>
     </language>
@@ -38,7 +43,6 @@
     </language>
   </registry>
   <node concept="3T3p6P" id="7gRhwPyQ2Bm">
-    <property role="mSlqH" value="Main" />
     <property role="TrG5h" value="Morse" />
     <node concept="24wO1E" id="7gRhwPyQ7bA" role="24wV7X">
       <property role="24wO0m" value="2, 3, 4, 5, 6, 7, 8" />
@@ -80,6 +84,12 @@
     <node concept="3T334G" id="7gRhwPyULIM" role="3T3nKE">
       <property role="TrG5h" value="button" />
       <property role="3T3nKM" value="9" />
+    </node>
+    <node concept="TUtLv" id="6ZIxELm2oul" role="TUtQX">
+      <property role="TrG5h" value="Main" />
+      <property role="TUtLq" value="-2" />
+      <property role="TUtLk" value="10" />
+      <property role="TUtLn" value="0" />
     </node>
   </node>
 </model>

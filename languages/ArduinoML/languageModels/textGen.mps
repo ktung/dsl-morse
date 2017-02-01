@@ -891,15 +891,39 @@
             <property role="lacIc" value="while len(" />
           </node>
           <node concept="l9hG8" id="6ZIxELm1mLR" role="lcghm">
-            <node concept="2OqwBi" id="6ZIxELm1mXl" role="lb14g">
-              <node concept="117lpO" id="6ZIxELm1mML" role="2Oq$k0" />
-              <node concept="3TrcHB" id="6ZIxELm1nan" role="2OqNvi">
-                <ref role="3TsBF5" to="67j:7gRhwPyPx2w" resolve="play" />
+            <node concept="2OqwBi" id="6ZIxELm1R1x" role="lb14g">
+              <node concept="2OqwBi" id="6ZIxELm1mXl" role="2Oq$k0">
+                <node concept="117lpO" id="6ZIxELm1mML" role="2Oq$k0" />
+                <node concept="3TrEf2" id="6ZIxELm1Qw$" role="2OqNvi">
+                  <ref role="3Tt5mk" to="67j:6ZIxELm1PGh" resolve="playRules" />
+                </node>
+              </node>
+              <node concept="3TrcHB" id="6ZIxELm1RgF" role="2OqNvi">
+                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
               </node>
             </node>
           </node>
           <node concept="la8eA" id="6ZIxELm1o58" role="lcghm">
-            <property role="lacIc" value=") != 0: " />
+            <property role="lacIc" value=") != 0 and score &lt; " />
+          </node>
+          <node concept="l9hG8" id="6ZIxELm1VmT" role="lcghm">
+            <node concept="3cpWs3" id="6ZIxELm1YHD" role="lb14g">
+              <node concept="Xl_RD" id="6ZIxELm1WJW" role="3uHU7B" />
+              <node concept="2OqwBi" id="6ZIxELm1WbB" role="3uHU7w">
+                <node concept="3TrcHB" id="6ZIxELm1WqL" role="2OqNvi">
+                  <ref role="3TsBF5" to="67j:6ZIxELm1PFS" resolve="maxpoint" />
+                </node>
+                <node concept="2OqwBi" id="6ZIxELm1VAE" role="2Oq$k0">
+                  <node concept="3TrEf2" id="6ZIxELm1VNG" role="2OqNvi">
+                    <ref role="3Tt5mk" to="67j:6ZIxELm1PGh" resolve="playRules" />
+                  </node>
+                  <node concept="117lpO" id="6ZIxELm1YOC" role="2Oq$k0" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="la8eA" id="6ZIxELm1Z6A" role="lcghm">
+            <property role="lacIc" value=":" />
           </node>
           <node concept="l8MVK" id="6ZIxELm1lm_" role="lcghm" />
         </node>
@@ -911,10 +935,15 @@
                 <property role="lacIc" value="word, wordScore = random.choice(list(" />
               </node>
               <node concept="l9hG8" id="6ZIxELm1qBF" role="lcghm">
-                <node concept="2OqwBi" id="6ZIxELm1qN9" role="lb14g">
-                  <node concept="117lpO" id="6ZIxELm1qC_" role="2Oq$k0" />
-                  <node concept="3TrcHB" id="6ZIxELm1r0b" role="2OqNvi">
-                    <ref role="3TsBF5" to="67j:7gRhwPyPx2w" resolve="play" />
+                <node concept="2OqwBi" id="6ZIxELm1SIw" role="lb14g">
+                  <node concept="2OqwBi" id="6ZIxELm1qN9" role="2Oq$k0">
+                    <node concept="117lpO" id="6ZIxELm1qC_" role="2Oq$k0" />
+                    <node concept="3TrEf2" id="6ZIxELm1So$" role="2OqNvi">
+                      <ref role="3Tt5mk" to="67j:6ZIxELm1PGh" resolve="playRules" />
+                    </node>
+                  </node>
+                  <node concept="3TrcHB" id="6ZIxELm1SVv" role="2OqNvi">
+                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                   </node>
                 </node>
               </node>
@@ -929,10 +958,15 @@
                 <property role="lacIc" value="del " />
               </node>
               <node concept="l9hG8" id="6ZIxELm1rlC" role="lcghm">
-                <node concept="2OqwBi" id="6ZIxELm1ryW" role="lb14g">
-                  <node concept="117lpO" id="6ZIxELm1rmy" role="2Oq$k0" />
-                  <node concept="3TrcHB" id="6ZIxELm1rJM" role="2OqNvi">
-                    <ref role="3TsBF5" to="67j:7gRhwPyPx2w" resolve="play" />
+                <node concept="2OqwBi" id="6ZIxELm1RT0" role="lb14g">
+                  <node concept="2OqwBi" id="6ZIxELm1ryW" role="2Oq$k0">
+                    <node concept="117lpO" id="6ZIxELm1rmy" role="2Oq$k0" />
+                    <node concept="3TrEf2" id="6ZIxELm1Rx5" role="2OqNvi">
+                      <ref role="3Tt5mk" to="67j:6ZIxELm1PGh" resolve="playRules" />
+                    </node>
+                  </node>
+                  <node concept="3TrcHB" id="6ZIxELm1S8a" role="2OqNvi">
+                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                   </node>
                 </node>
               </node>
@@ -1016,7 +1050,25 @@
               <node concept="2BGw6n" id="6ZIxELm1tYS" role="lcghm" />
               <node concept="2BGw6n" id="6ZIxELm1tZ4" role="lcghm" />
               <node concept="la8eA" id="6ZIxELm1tZi" role="lcghm">
-                <property role="lacIc" value="score -= 1" />
+                <property role="lacIc" value="score += " />
+              </node>
+              <node concept="l9hG8" id="6ZIxELm1T0C" role="lcghm">
+                <node concept="3cpWs3" id="6ZIxELm1TPw" role="lb14g">
+                  <node concept="2OqwBi" id="6ZIxELm1UEr" role="3uHU7w">
+                    <node concept="2OqwBi" id="6ZIxELm1U3c" role="2Oq$k0">
+                      <node concept="117lpO" id="6ZIxELm1TQu" role="2Oq$k0" />
+                      <node concept="3TrEf2" id="6ZIxELm1Ugd" role="2OqNvi">
+                        <ref role="3Tt5mk" to="67j:6ZIxELm1PGh" resolve="playRules" />
+                      </node>
+                    </node>
+                    <node concept="3TrcHB" id="6ZIxELm1UT$" role="2OqNvi">
+                      <ref role="3TsBF5" to="67j:6ZIxELm1PFQ" resolve="fail" />
+                    </node>
+                  </node>
+                  <node concept="Xl_RD" id="6ZIxELm1T1_" role="3uHU7B">
+                    <property role="Xl_RC" value="" />
+                  </node>
+                </node>
               </node>
               <node concept="l8MVK" id="6ZIxELm1u9t" role="lcghm" />
               <node concept="l8MVK" id="6ZIxELm1uad" role="lcghm" />

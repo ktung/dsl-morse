@@ -95,8 +95,7 @@ public class App_Editor extends DefaultNodeEditor {
     editorCell.addEditorCell(this.createConstant_g38wqt_l3a(editorContext, node));
     editorCell.addEditorCell(this.createRefNodeList_g38wqt_m3a(editorContext, node));
     editorCell.addEditorCell(this.createConstant_g38wqt_n3a(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_g38wqt_o3a(editorContext, node));
-    editorCell.addEditorCell(this.createProperty_g38wqt_p3a(editorContext, node));
+    editorCell.addEditorCell(this.createRefNode_g38wqt_o3a(editorContext, node));
     return editorCell;
   }
   private EditorCell createConstant_g38wqt_a3a(EditorContext editorContext, SNode node) {
@@ -340,26 +339,38 @@ public class App_Editor extends DefaultNodeEditor {
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createConstant_g38wqt_o3a(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "PLAY");
-    editorCell.setCellId("Constant_g38wqt_o3a");
-    editorCell.setDefaultText("");
-    return editorCell;
+  private EditorCell createRefNode_g38wqt_o3a(EditorContext editorContext, SNode node) {
+    SingleRoleCellProvider provider = new App_Editor.playRulesSingleRoleHandler_g38wqt_o3a(node, MetaAdapterFactory.getContainmentLink(0x5edee0cf46e149f9L, 0x971e6b9e2e5cae16L, 0x720eda988b034b2dL, 0x6fee86ac56075b11L, "playRules"), editorContext);
+    return provider.createCell();
   }
-  private EditorCell createProperty_g38wqt_p3a(EditorContext editorContext, SNode node) {
-    CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
-    provider.setRole("play");
-    provider.setNoTargetText("<no play>");
-    EditorCell editorCell;
-    editorCell = provider.createEditorCell(editorContext);
-    editorCell.setCellId("property_play");
-    editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
-    SNode attributeConcept = provider.getRoleAttribute();
-    if (attributeConcept != null) {
-      EditorManager manager = EditorManager.getInstanceFromContext(editorContext);
-      return manager.createNodeRoleAttributeCell(attributeConcept, provider.getRoleAttributeKind(), editorCell);
-    } else
-    return editorCell;
+  private class playRulesSingleRoleHandler_g38wqt_o3a extends SingleRoleCellProvider {
+    public playRulesSingleRoleHandler_g38wqt_o3a(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
+      super(ownerNode, containmentLink, context);
+    }
+    protected EditorCell createChildCell(SNode child) {
+      EditorCell editorCell = super.createChildCell(child);
+      installCellInfo(child, editorCell);
+      return editorCell;
+    }
+    private void installCellInfo(SNode child, EditorCell editorCell) {
+      if (editorCell.getSubstituteInfo() == null || editorCell.getSubstituteInfo() instanceof DefaultSubstituteInfo) {
+        editorCell.setSubstituteInfo(new OldNewCompositeSubstituteInfo(myEditorContext, new SChildSubstituteInfo(editorCell, myOwnerNode, MetaAdapterFactory.getContainmentLink(0x5edee0cf46e149f9L, 0x971e6b9e2e5cae16L, 0x720eda988b034b2dL, 0x6fee86ac56075b11L, "playRules"), child), new DefaultChildSubstituteInfo(myOwnerNode, myContainmentLink.getDeclarationNode(), myEditorContext)));
+      }
+      if (editorCell.getRole() == null) {
+        editorCell.setRole("playRules");
+      }
+    }
+    @Override
+    protected EditorCell createEmptyCell() {
+      EditorCell editorCell = super.createEmptyCell();
+      editorCell.setCellId("empty_playRules");
+
+      installCellInfo(null, editorCell);
+      return editorCell;
+    }
+    protected String getNoTargetText() {
+      return "<no playRules>";
+    }
   }
   private EditorCell createConstant_g38wqt_e0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "}");

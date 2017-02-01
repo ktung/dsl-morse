@@ -19,6 +19,9 @@
     <file name="Lcd_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ArduinoML.behavior.Lcd_BehaviorDescriptor" />
     </file>
+    <file name="PlayRules_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="ArduinoML.behavior.PlayRules_BehaviorDescriptor" />
+    </file>
     <file name="Quizz_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ArduinoML.behavior.Quizz_BehaviorDescriptor" />
     </file>

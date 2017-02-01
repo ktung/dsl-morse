@@ -89,7 +89,7 @@ Disney =  {"FROZEN":12,"VAIANA":9,"MOWGLI":14,}
 score = 0
 arduino = serial.Serial('/dev/ttyACM0', 9600) 
 arduino.timeout = 1.4
-while len(Main) != 0: 
+while len(Main) != 0 and score < 10:
   word, wordScore = random.choice(list(Main.items()))
   del Main[word]
   response = ''
@@ -103,7 +103,7 @@ while len(Main) != 0:
   if "OK" in response:
     score += wordScore
   else:
-    score -= 1
+    score += -2
 
   while("Score" not in response):
     arduino.write(str(score)+";")

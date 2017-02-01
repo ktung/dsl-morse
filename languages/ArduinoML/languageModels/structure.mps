@@ -88,11 +88,6 @@
     <property role="19KtqR" value="true" />
     <property role="EcuMT" value="8218746718699866925" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyi" id="7gRhwPyPx2w" role="1TKVEl">
-      <property role="IQ2nx" value="8374239055425441952" />
-      <property role="TrG5h" value="play" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
     <node concept="1TJgyj" id="78eQDyb0UqM" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="button" />
@@ -120,6 +115,13 @@
       <property role="20kJfa" value="quizzes" />
       <property role="20lbJX" value="1..n" />
       <ref role="20lvS9" node="4b34_B6gacj" resolve="Quizz" />
+    </node>
+    <node concept="1TJgyj" id="6ZIxELm1PGh" role="1TKVEi">
+      <property role="IQ2ns" value="8065532057402956561" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="playRules" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6ZIxELm1PFN" resolve="PlayRules" />
     </node>
     <node concept="PrWs8" id="78eQDyb2T_e" role="PzmwI">
       <ref role="PrY4T" to="4fqr:431DWIovi3l" resolve="IMainClass" />
@@ -258,6 +260,29 @@
     <node concept="1TJgyi" id="4b34_B6gae6" role="1TKVEl">
       <property role="IQ2nx" value="4810709003749335942" />
       <property role="TrG5h" value="score" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6ZIxELm1PFN">
+    <property role="EcuMT" value="8065532057402956531" />
+    <property role="TrG5h" value="PlayRules" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="6ZIxELm1PFO" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="1TJgyi" id="6ZIxELm1PFQ" role="1TKVEl">
+      <property role="IQ2nx" value="8065532057402956534" />
+      <property role="TrG5h" value="fail" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyi" id="6ZIxELm1PFS" role="1TKVEl">
+      <property role="IQ2nx" value="8065532057402956536" />
+      <property role="TrG5h" value="maxpoint" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyi" id="6ZIxELm1PFV" role="1TKVEl">
+      <property role="IQ2nx" value="8065532057402956539" />
+      <property role="TrG5h" value="retry" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
   </node>

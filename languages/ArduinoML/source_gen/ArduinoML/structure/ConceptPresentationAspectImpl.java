@@ -14,6 +14,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_App = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Brick = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Lcd = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_PlayRules = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Quizz = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Sensor = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_State = new ConceptPresentationBuilder().create();
@@ -36,14 +37,16 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case 4:
         return props_Lcd;
       case 5:
-        return props_Quizz;
+        return props_PlayRules;
       case 6:
-        return props_Sensor;
+        return props_Quizz;
       case 7:
-        return props_State;
+        return props_Sensor;
       case 8:
-        return props_Transition;
+        return props_State;
       case 9:
+        return props_Transition;
+      case 10:
         return props_Word;
     }
     throw new IllegalStateException("Unknown concept " + c);
