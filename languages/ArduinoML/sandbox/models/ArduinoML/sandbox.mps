@@ -44,6 +44,29 @@
   </registry>
   <node concept="3T3p6P" id="7gRhwPyQ2Bm">
     <property role="TrG5h" value="Morse" />
+    <node concept="24wV5a" id="6EgwG$J5Xj4" role="mSlq3">
+      <property role="TrG5h" value="Test" />
+      <node concept="24wV5Q" id="6EgwG$J5Xje" role="24wV4i">
+        <property role="24wV7t" value="EE" />
+        <property role="24wV7v" value="2" />
+      </node>
+      <node concept="24wV5Q" id="6EgwG$J62PH" role="24wV4i">
+        <property role="24wV7t" value="II" />
+        <property role="24wV7v" value="5" />
+      </node>
+      <node concept="24wV5Q" id="6EgwG$J62PK" role="24wV4i">
+        <property role="24wV7t" value="TT" />
+        <property role="24wV7v" value="3" />
+      </node>
+      <node concept="24wV5Q" id="6EgwG$J62PO" role="24wV4i">
+        <property role="24wV7t" value="SS" />
+        <property role="24wV7v" value="10" />
+      </node>
+      <node concept="24wV5Q" id="6EgwG$J62PT" role="24wV4i">
+        <property role="24wV7t" value="55" />
+        <property role="24wV7v" value="5" />
+      </node>
+    </node>
     <node concept="24wO1E" id="7gRhwPyQ7bA" role="24wV7X">
       <property role="24wO0m" value="2, 3, 4, 5, 6, 7, 8" />
     </node>
@@ -86,7 +109,7 @@
       <property role="3T3nKM" value="9" />
     </node>
     <node concept="TUtLv" id="6ZIxELm2oul" role="TUtQX">
-      <property role="TrG5h" value="Main" />
+      <property role="TrG5h" value="Test" />
       <property role="TUtLq" value="-2" />
       <property role="TUtLk" value="10" />
       <property role="TUtLn" value="0" />

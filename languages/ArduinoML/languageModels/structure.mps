@@ -241,7 +241,7 @@
       <property role="IQ2ns" value="4810709003749335883" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="words" />
-      <property role="20lbJX" value="0..n" />
+      <property role="20lbJX" value="1..n" />
       <ref role="20lvS9" node="4b34_B6gacJ" resolve="Word" />
     </node>
     <node concept="PrWs8" id="7gRhwPyPx2m" role="PzmwI">
