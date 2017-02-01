@@ -2,6 +2,7 @@
 # -*-coding:Latin-1 -*
 
 import random
+import collections
 
 # Pour créer un quizz, on fait un dictionnaire:
 disney = {"frozen":12, "vaiana":9, "mowgli":14}
@@ -23,4 +24,7 @@ print word, score
 main = {"sos":10, "hello":5, "bonjour": 2}
 mix = disney.copy()
 mix.update(main)
-print mix
+od = collections.OrderedDict(sorted(mix.items()))
+word, score = od.popitem()
+print word, score
+print od
