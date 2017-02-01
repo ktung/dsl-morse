@@ -24,7 +24,7 @@ print word, score
 main = {"sos":10, "hello":5, "bonjour": 2}
 mix = disney.copy()
 mix.update(main)
-od = collections.OrderedDict(sorted(mix.items()))
-word, score = od.popitem()
+mix = collections.OrderedDict(sorted(mix.items()))
+word, score = mix.popitem()
 print word, score
-print od
+print mix
