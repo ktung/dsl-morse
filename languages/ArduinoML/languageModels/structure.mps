@@ -115,6 +115,13 @@
       <property role="20lbJX" value="1..n" />
       <ref role="20lvS9" node="4b34_B6gacj" resolve="Quizz" />
     </node>
+    <node concept="1TJgyj" id="6ZIxELm2ySG" role="1TKVEi">
+      <property role="IQ2ns" value="8065532057403141676" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="mixRules" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="6ZIxELm2yGW" resolve="MixRule" />
+    </node>
     <node concept="1TJgyj" id="6ZIxELm1PGh" role="1TKVEi">
       <property role="IQ2ns" value="8065532057402956561" />
       <property role="20lmBu" value="aggregation" />
@@ -159,16 +166,13 @@
   <node concept="1TIwiD" id="4b34_B6gacj">
     <property role="EcuMT" value="4810709003749335827" />
     <property role="TrG5h" value="Quizz" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" node="6ZIxELm5ySf" resolve="GameType" />
     <node concept="1TJgyj" id="4b34_B6gadb" role="1TKVEi">
       <property role="IQ2ns" value="4810709003749335883" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="words" />
       <property role="20lbJX" value="1..n" />
       <ref role="20lvS9" node="4b34_B6gacJ" resolve="Word" />
-    </node>
-    <node concept="PrWs8" id="7gRhwPyPx2m" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
   <node concept="1TIwiD" id="4b34_B6gacJ">
@@ -190,9 +194,6 @@
     <property role="EcuMT" value="8065532057402956531" />
     <property role="TrG5h" value="PlayRules" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="6ZIxELm1PFO" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
     <node concept="1TJgyi" id="6ZIxELm1PFQ" role="1TKVEl">
       <property role="IQ2nx" value="8065532057402956534" />
       <property role="TrG5h" value="fail" />
@@ -207,6 +208,40 @@
       <property role="IQ2nx" value="8065532057402956539" />
       <property role="TrG5h" value="retry" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyj" id="6ZIxELm4ZXc" role="1TKVEi">
+      <property role="IQ2ns" value="8065532057403785036" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="quizz" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6ZIxELm5ySf" resolve="GameType" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6ZIxELm2yGW">
+    <property role="EcuMT" value="8065532057403140924" />
+    <property role="TrG5h" value="MixRule" />
+    <ref role="1TJDcQ" node="6ZIxELm5ySf" resolve="GameType" />
+    <node concept="1TJgyj" id="6ZIxELm3h6N" role="1TKVEi">
+      <property role="IQ2ns" value="8065532057403330995" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="quizz1" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="4b34_B6gacj" resolve="Quizz" />
+    </node>
+    <node concept="1TJgyj" id="6ZIxELm3h6P" role="1TKVEi">
+      <property role="IQ2ns" value="8065532057403330997" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="quizz2" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="4b34_B6gacj" resolve="Quizz" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6ZIxELm5ySf">
+    <property role="EcuMT" value="8065532057403928079" />
+    <property role="TrG5h" value="GameType" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="6ZIxELm5ySg" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
 </model>

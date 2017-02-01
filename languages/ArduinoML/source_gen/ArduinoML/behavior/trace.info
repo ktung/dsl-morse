@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debug-info version="2">
   <root>
-    <file name="Action_BehaviorDescriptor.java">
-      <unit at="11,0,17,0" name="ArduinoML.behavior.Action_BehaviorDescriptor" />
-    </file>
     <file name="Actuator_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ArduinoML.behavior.Actuator_BehaviorDescriptor" />
     </file>
@@ -16,8 +13,14 @@
     <file name="Brick_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ArduinoML.behavior.Brick_BehaviorDescriptor" />
     </file>
+    <file name="GameType_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="ArduinoML.behavior.GameType_BehaviorDescriptor" />
+    </file>
     <file name="Lcd_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ArduinoML.behavior.Lcd_BehaviorDescriptor" />
+    </file>
+    <file name="MixRule_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="ArduinoML.behavior.MixRule_BehaviorDescriptor" />
     </file>
     <file name="PlayRules_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ArduinoML.behavior.PlayRules_BehaviorDescriptor" />
@@ -27,12 +30,6 @@
     </file>
     <file name="Sensor_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ArduinoML.behavior.Sensor_BehaviorDescriptor" />
-    </file>
-    <file name="State_BehaviorDescriptor.java">
-      <unit at="11,0,17,0" name="ArduinoML.behavior.State_BehaviorDescriptor" />
-    </file>
-    <file name="Transition_BehaviorDescriptor.java">
-      <unit at="11,0,17,0" name="ArduinoML.behavior.Transition_BehaviorDescriptor" />
     </file>
     <file name="Word_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ArduinoML.behavior.Word_BehaviorDescriptor" />

@@ -9,7 +9,7 @@ package ArduinoML.behavior;
  * This class is not involved in the actual method invocation
  */
 @Deprecated
-public class Action_BehaviorDescriptor {
+public class GameType_BehaviorDescriptor {
   public String getConceptFqName() {
     return null;
   }

@@ -9,7 +9,7 @@ package ArduinoML.behavior;
  * This class is not involved in the actual method invocation
  */
 @Deprecated
-public class State_BehaviorDescriptor {
+public class MixRule_BehaviorDescriptor {
   public String getConceptFqName() {
     return null;
   }

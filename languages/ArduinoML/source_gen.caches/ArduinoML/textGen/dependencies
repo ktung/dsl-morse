@@ -37,6 +37,15 @@
     <classNode dependClassName="jetbrains.mps.text.rt.TextGenContext" />
     <classNode extendsClassName="jetbrains.mps.text.rt.TextGenDescriptorBase" />
   </dependency>
+  <dependency className="ArduinoML.textGen.MixRule_TextGen" file="MixRule_TextGen.java">
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="jetbrains.mps.text.impl.TextGenSupport" />
+    <classNode dependClassName="jetbrains.mps.text.rt.TextGenContext" />
+    <classNode extendsClassName="jetbrains.mps.text.rt.TextGenDescriptorBase" />
+  </dependency>
   <dependency className="ArduinoML.textGen.Quizz_TextGen" file="Quizz_TextGen.java">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="jetbrains.mps.internal.collections.runtime.IVisitor" />
@@ -62,6 +71,7 @@
     <classNode dependClassName="ArduinoML.textGen.App_TextGen" />
     <classNode dependClassName="ArduinoML.textGen.Brick_TextGen" />
     <classNode dependClassName="ArduinoML.textGen.Lcd_TextGen" />
+    <classNode dependClassName="ArduinoML.textGen.MixRule_TextGen" />
     <classNode dependClassName="ArduinoML.textGen.Quizz_TextGen" />
     <classNode dependClassName="ArduinoML.textGen.Sensor_TextGen" />
     <classNode dependClassName="java.lang.Integer" />

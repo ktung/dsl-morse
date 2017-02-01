@@ -83,15 +83,27 @@ import serial
 import random
 import collections
 
+Test =  {"EE":2,"II":5,"TT":3,"SS":10,"55":5,}
 Main =  {"SOS":10,"HELLO":5,"BONJOUR":2,}
 Disney =  {"FROZEN":12,"VAIANA":9,"MOWGLI":14,}
 
+COUCOU = Disney.copy()
+COUCOU.update(Main)
+COUCOU = collections.OrderedDict(sorted(COUCOU.items()))
+
+
+
 score = 0
+retry = 0
 arduino = serial.Serial('/dev/ttyACM0', 9600) 
 arduino.timeout = 1.4
-while len(Main) != 0 and score < 10:
-  word, wordScore = random.choice(list(Main.items()))
-  del Main[word]
+success = True
+while len(COUCOU) != 0 and score < 10:
+  if retry <= 0 or success:
+    word, wordScore = random.choice(list(COUCOU.items()))
+    del COUCOU[word]
+    retry = 0
+    success = False
   response = ''
   while("Ready" not in response):
     arduino.write(word+";")
@@ -102,8 +114,11 @@ while len(Main) != 0 and score < 10:
 
   if "OK" in response:
     score += wordScore
+    success = True
   else:
-    score += -2
+    retry -=1
+    if retry <= 0:
+      score += 0
 
   while("Score" not in response):
     arduino.write(str(score)+";")

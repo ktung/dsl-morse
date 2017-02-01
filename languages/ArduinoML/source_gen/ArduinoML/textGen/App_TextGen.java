@@ -355,31 +355,57 @@ public class App_TextGen extends TextGenDescriptorBase {
         tgs.newLine();
       }
     });
+    ListSequence.fromList(SLinkOperations.getChildren(ctx.getPrimaryInput(), MetaAdapterFactory.getContainmentLink(0x5edee0cf46e149f9L, 0x971e6b9e2e5cae16L, 0x720eda988b034b2dL, 0x6fee86ac560a2e2cL, "mixRules"))).visitAll(new IVisitor<SNode>() {
+      public void visit(SNode it) {
+        tgs.appendNode(it);
+        tgs.newLine();
+      }
+    });
     tgs.newLine();
     tgs.append("score = 0");
+    tgs.newLine();
+    tgs.append("retry = ");
+    tgs.append("" + SPropertyOperations.getInteger(SLinkOperations.getTarget(ctx.getPrimaryInput(), MetaAdapterFactory.getContainmentLink(0x5edee0cf46e149f9L, 0x971e6b9e2e5cae16L, 0x720eda988b034b2dL, 0x6fee86ac56075b11L, "playRules")), MetaAdapterFactory.getProperty(0x5edee0cf46e149f9L, 0x971e6b9e2e5cae16L, 0x6fee86ac56075af3L, 0x6fee86ac56075afbL, "retry")));
     tgs.newLine();
     tgs.append("arduino = serial.Serial('/dev/ttyACM0', 9600) ");
     tgs.newLine();
     tgs.append("arduino.timeout = 1.4");
     tgs.newLine();
+    tgs.append("success = True");
+    tgs.newLine();
 
     tgs.append("while len(");
-    tgs.append(SPropertyOperations.getString(SLinkOperations.getTarget(ctx.getPrimaryInput(), MetaAdapterFactory.getContainmentLink(0x5edee0cf46e149f9L, 0x971e6b9e2e5cae16L, 0x720eda988b034b2dL, 0x6fee86ac56075b11L, "playRules")), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
+    tgs.append(SPropertyOperations.getString(SLinkOperations.getTarget(SLinkOperations.getTarget(ctx.getPrimaryInput(), MetaAdapterFactory.getContainmentLink(0x5edee0cf46e149f9L, 0x971e6b9e2e5cae16L, 0x720eda988b034b2dL, 0x6fee86ac56075b11L, "playRules")), MetaAdapterFactory.getReferenceLink(0x5edee0cf46e149f9L, 0x971e6b9e2e5cae16L, 0x6fee86ac56075af3L, 0x6fee86ac5613ff4cL, "quizz")), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
     tgs.append(") != 0 and score < ");
     tgs.append("" + SPropertyOperations.getInteger(SLinkOperations.getTarget(ctx.getPrimaryInput(), MetaAdapterFactory.getContainmentLink(0x5edee0cf46e149f9L, 0x971e6b9e2e5cae16L, 0x720eda988b034b2dL, 0x6fee86ac56075b11L, "playRules")), MetaAdapterFactory.getProperty(0x5edee0cf46e149f9L, 0x971e6b9e2e5cae16L, 0x6fee86ac56075af3L, 0x6fee86ac56075af8L, "maxpoint")));
     tgs.append(":");
     tgs.newLine();
     ctx.getBuffer().area().increaseIndent();
     tgs.indent();
+    tgs.append("if retry <= 0 or success:");
+    tgs.newLine();
+    tgs.indent();
+    tgs.indent();
     tgs.append("word, wordScore = random.choice(list(");
-    tgs.append(SPropertyOperations.getString(SLinkOperations.getTarget(ctx.getPrimaryInput(), MetaAdapterFactory.getContainmentLink(0x5edee0cf46e149f9L, 0x971e6b9e2e5cae16L, 0x720eda988b034b2dL, 0x6fee86ac56075b11L, "playRules")), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
+    tgs.append(SPropertyOperations.getString(SLinkOperations.getTarget(SLinkOperations.getTarget(ctx.getPrimaryInput(), MetaAdapterFactory.getContainmentLink(0x5edee0cf46e149f9L, 0x971e6b9e2e5cae16L, 0x720eda988b034b2dL, 0x6fee86ac56075b11L, "playRules")), MetaAdapterFactory.getReferenceLink(0x5edee0cf46e149f9L, 0x971e6b9e2e5cae16L, 0x6fee86ac56075af3L, 0x6fee86ac5613ff4cL, "quizz")), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
     tgs.append(".items()))");
     tgs.newLine();
     tgs.indent();
+    tgs.indent();
     tgs.append("del ");
-    tgs.append(SPropertyOperations.getString(SLinkOperations.getTarget(ctx.getPrimaryInput(), MetaAdapterFactory.getContainmentLink(0x5edee0cf46e149f9L, 0x971e6b9e2e5cae16L, 0x720eda988b034b2dL, 0x6fee86ac56075b11L, "playRules")), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
+    tgs.append(SPropertyOperations.getString(SLinkOperations.getTarget(SLinkOperations.getTarget(ctx.getPrimaryInput(), MetaAdapterFactory.getContainmentLink(0x5edee0cf46e149f9L, 0x971e6b9e2e5cae16L, 0x720eda988b034b2dL, 0x6fee86ac56075b11L, "playRules")), MetaAdapterFactory.getReferenceLink(0x5edee0cf46e149f9L, 0x971e6b9e2e5cae16L, 0x6fee86ac56075af3L, 0x6fee86ac5613ff4cL, "quizz")), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
     tgs.append("[word]");
     tgs.newLine();
+    tgs.indent();
+    tgs.indent();
+    tgs.append("retry = ");
+    tgs.append("" + SPropertyOperations.getInteger(SLinkOperations.getTarget(ctx.getPrimaryInput(), MetaAdapterFactory.getContainmentLink(0x5edee0cf46e149f9L, 0x971e6b9e2e5cae16L, 0x720eda988b034b2dL, 0x6fee86ac56075b11L, "playRules")), MetaAdapterFactory.getProperty(0x5edee0cf46e149f9L, 0x971e6b9e2e5cae16L, 0x6fee86ac56075af3L, 0x6fee86ac56075afbL, "retry")));
+    tgs.newLine();
+    tgs.indent();
+    tgs.indent();
+    tgs.append("success = False");
+    tgs.newLine();
+
     tgs.indent();
     tgs.append("response = ''");
     tgs.newLine();
@@ -413,8 +439,22 @@ public class App_TextGen extends TextGenDescriptorBase {
     tgs.append("score += wordScore");
     tgs.newLine();
     tgs.indent();
+    tgs.indent();
+    tgs.append("success = True");
+    tgs.newLine();
+
+    tgs.indent();
     tgs.append("else:");
     tgs.newLine();
+    tgs.indent();
+    tgs.indent();
+    tgs.append("retry -=1");
+    tgs.newLine();
+    tgs.indent();
+    tgs.indent();
+    tgs.append("if retry <= 0:");
+    tgs.newLine();
+    tgs.indent();
     tgs.indent();
     tgs.indent();
     tgs.append("score += ");
