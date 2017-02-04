@@ -386,16 +386,25 @@ public class App_TextGen extends TextGenDescriptorBase {
     tgs.newLine();
     tgs.indent();
     tgs.indent();
-    tgs.append("word, wordScore = random.choice(list(");
-    tgs.append(SPropertyOperations.getString(SLinkOperations.getTarget(SLinkOperations.getTarget(ctx.getPrimaryInput(), MetaAdapterFactory.getContainmentLink(0x5edee0cf46e149f9L, 0x971e6b9e2e5cae16L, 0x720eda988b034b2dL, 0x6fee86ac56075b11L, "playRules")), MetaAdapterFactory.getReferenceLink(0x5edee0cf46e149f9L, 0x971e6b9e2e5cae16L, 0x6fee86ac56075af3L, 0x6fee86ac5613ff4cL, "quizz")), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
-    tgs.append(".items()))");
-    tgs.newLine();
-    tgs.indent();
-    tgs.indent();
-    tgs.append("del ");
-    tgs.append(SPropertyOperations.getString(SLinkOperations.getTarget(SLinkOperations.getTarget(ctx.getPrimaryInput(), MetaAdapterFactory.getContainmentLink(0x5edee0cf46e149f9L, 0x971e6b9e2e5cae16L, 0x720eda988b034b2dL, 0x6fee86ac56075b11L, "playRules")), MetaAdapterFactory.getReferenceLink(0x5edee0cf46e149f9L, 0x971e6b9e2e5cae16L, 0x6fee86ac56075af3L, 0x6fee86ac5613ff4cL, "quizz")), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
-    tgs.append("[word]");
-    tgs.newLine();
+    tgs.append("word, wordScore = ");
+
+    if (SPropertyOperations.hasValue(SLinkOperations.getTarget(ctx.getPrimaryInput(), MetaAdapterFactory.getContainmentLink(0x5edee0cf46e149f9L, 0x971e6b9e2e5cae16L, 0x720eda988b034b2dL, 0x6fee86ac56075b11L, "playRules")), MetaAdapterFactory.getProperty(0x5edee0cf46e149f9L, 0x971e6b9e2e5cae16L, 0x6fee86ac56075af3L, 0x4b25cf487d6d8cfcL, "select"), "random", "random")) {
+      tgs.append("random.choice(list(");
+      tgs.append(SPropertyOperations.getString(SLinkOperations.getTarget(SLinkOperations.getTarget(ctx.getPrimaryInput(), MetaAdapterFactory.getContainmentLink(0x5edee0cf46e149f9L, 0x971e6b9e2e5cae16L, 0x720eda988b034b2dL, 0x6fee86ac56075b11L, "playRules")), MetaAdapterFactory.getReferenceLink(0x5edee0cf46e149f9L, 0x971e6b9e2e5cae16L, 0x6fee86ac56075af3L, 0x6fee86ac5613ff4cL, "quizz")), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
+      tgs.append(".items()))");
+      tgs.newLine();
+      tgs.indent();
+      tgs.indent();
+      tgs.append("del ");
+      tgs.append(SPropertyOperations.getString(SLinkOperations.getTarget(SLinkOperations.getTarget(ctx.getPrimaryInput(), MetaAdapterFactory.getContainmentLink(0x5edee0cf46e149f9L, 0x971e6b9e2e5cae16L, 0x720eda988b034b2dL, 0x6fee86ac56075b11L, "playRules")), MetaAdapterFactory.getReferenceLink(0x5edee0cf46e149f9L, 0x971e6b9e2e5cae16L, 0x6fee86ac56075af3L, 0x6fee86ac5613ff4cL, "quizz")), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
+      tgs.append("[word]");
+      tgs.newLine();
+    } else {
+      tgs.append(SPropertyOperations.getString(SLinkOperations.getTarget(SLinkOperations.getTarget(ctx.getPrimaryInput(), MetaAdapterFactory.getContainmentLink(0x5edee0cf46e149f9L, 0x971e6b9e2e5cae16L, 0x720eda988b034b2dL, 0x6fee86ac56075b11L, "playRules")), MetaAdapterFactory.getReferenceLink(0x5edee0cf46e149f9L, 0x971e6b9e2e5cae16L, 0x6fee86ac56075af3L, 0x6fee86ac5613ff4cL, "quizz")), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
+      tgs.append(".popitem()");
+      tgs.newLine();
+    }
+
     tgs.indent();
     tgs.indent();
     tgs.append("retry = ");

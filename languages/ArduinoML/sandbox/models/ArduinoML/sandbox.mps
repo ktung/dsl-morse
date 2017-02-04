@@ -23,6 +23,7 @@
         <reference id="8065532057403330995" name="quizz1" index="TSTsv" />
       </concept>
       <concept id="8065532057402956531" name="ArduinoML.structure.PlayRules" flags="ng" index="TUtLv">
+        <property id="5414962037231815932" name="select" index="Qi4eO" />
         <property id="8065532057402956536" name="maxpoint" index="TUtLk" />
         <property id="8065532057402956539" name="retry" index="TUtLn" />
         <property id="8065532057402956534" name="fail" index="TUtLq" />
@@ -69,7 +70,7 @@
         <property role="24wV7v" value="10" />
       </node>
       <node concept="24wV5Q" id="6EgwG$J62PT" role="24wV4i">
-        <property role="24wV7t" value="55" />
+        <property role="24wV7t" value="AA" />
         <property role="24wV7v" value="5" />
       </node>
     </node>
@@ -120,10 +121,11 @@
       <ref role="TSTsp" node="7gRhwPyQvlv" resolve="Main" />
     </node>
     <node concept="TUtLv" id="6ZIxELm5ySd" role="TUtQX">
-      <property role="TUtLq" value="0" />
+      <property role="TUtLq" value="-2" />
       <property role="TUtLk" value="10" />
-      <property role="TUtLn" value="0" />
-      <ref role="TZnBw" node="6ZIxELm2WpU" resolve="COUCOU" />
+      <property role="TUtLn" value="3" />
+      <property role="Qi4eO" value="linear" />
+      <ref role="TZnBw" node="6EgwG$J5Xj4" resolve="Test" />
     </node>
   </node>
 </model>

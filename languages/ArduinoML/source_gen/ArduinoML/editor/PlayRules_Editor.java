@@ -97,6 +97,8 @@ public class PlayRules_Editor extends DefaultNodeEditor {
     editorCell.addEditorCell(this.createProperty_jwypic_d2a(editorContext, node));
     editorCell.addEditorCell(this.createConstant_jwypic_e2a(editorContext, node));
     editorCell.addEditorCell(this.createProperty_jwypic_f2a(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_jwypic_g2a(editorContext, node));
+    editorCell.addEditorCell(this.createProperty_jwypic_h2a(editorContext, node));
     return editorCell;
   }
   private EditorCell createConstant_jwypic_a2a(EditorContext editorContext, SNode node) {
@@ -163,6 +165,27 @@ public class PlayRules_Editor extends DefaultNodeEditor {
     Style style = new StyleImpl();
     style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, 0, true);
     editorCell.getStyle().putAll(style);
+    editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
+    SNode attributeConcept = provider.getRoleAttribute();
+    if (attributeConcept != null) {
+      EditorManager manager = EditorManager.getInstanceFromContext(editorContext);
+      return manager.createNodeRoleAttributeCell(attributeConcept, provider.getRoleAttributeKind(), editorCell);
+    } else
+    return editorCell;
+  }
+  private EditorCell createConstant_jwypic_g2a(EditorContext editorContext, SNode node) {
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "SELECT");
+    editorCell.setCellId("Constant_jwypic_g2a");
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+  private EditorCell createProperty_jwypic_h2a(EditorContext editorContext, SNode node) {
+    CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
+    provider.setRole("select");
+    provider.setNoTargetText("<no select>");
+    EditorCell editorCell;
+    editorCell = provider.createEditorCell(editorContext);
+    editorCell.setCellId("property_select");
     editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
     SNode attributeConcept = provider.getRoleAttribute();
     if (attributeConcept != null) {

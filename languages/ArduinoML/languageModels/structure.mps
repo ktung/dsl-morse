@@ -209,6 +209,11 @@
       <property role="TrG5h" value="retry" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
+    <node concept="1TJgyi" id="4G_NOxXroNW" role="1TKVEl">
+      <property role="IQ2nx" value="5414962037231815932" />
+      <property role="TrG5h" value="select" />
+      <ref role="AX2Wp" node="4G_NOxXroNK" resolve="SelectType" />
+    </node>
     <node concept="1TJgyj" id="6ZIxELm4ZXc" role="1TKVEi">
       <property role="IQ2ns" value="8065532057403785036" />
       <property role="20lmBu" value="reference" />
@@ -242,6 +247,18 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="6ZIxELm5ySg" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="AxPO7" id="4G_NOxXroNK">
+    <property role="TrG5h" value="SelectType" />
+    <ref role="M4eZT" to="tpck:fKAOsGN" resolve="string" />
+    <node concept="M4N5e" id="4G_NOxXroNL" role="M5hS2">
+      <property role="1uS6qo" value="random" />
+      <property role="1uS6qv" value="random" />
+    </node>
+    <node concept="M4N5e" id="4G_NOxXroNM" role="M5hS2">
+      <property role="1uS6qv" value="linear" />
+      <property role="1uS6qo" value="linear" />
     </node>
   </node>
 </model>
