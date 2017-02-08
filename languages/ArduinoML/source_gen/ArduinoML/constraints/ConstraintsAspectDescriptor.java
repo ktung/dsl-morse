@@ -36,6 +36,11 @@ public class ConstraintsAspectDescriptor extends BaseConstraintsAspectDescriptor
             return new PlayRules_Constraints();
           }
           break;
+        case 3:
+          if (true) {
+            return new Word_Constraints();
+          }
+          break;
         default:
           // default 
       }
@@ -50,5 +55,5 @@ public class ConstraintsAspectDescriptor extends BaseConstraintsAspectDescriptor
     }
     return res;
   }
-  private static final Map<SAbstractConcept, Integer> indices_2qnle6_a0c = buildConceptIndices(MetaAdapterFactory.getConcept(0x5edee0cf46e149f9L, 0x971e6b9e2e5cae16L, 0x720eda988b034b2cL, "ArduinoML.structure.Brick"), MetaAdapterFactory.getConcept(0x5edee0cf46e149f9L, 0x971e6b9e2e5cae16L, 0x42c31259c6405233L, "ArduinoML.structure.Lcd"), MetaAdapterFactory.getConcept(0x5edee0cf46e149f9L, 0x971e6b9e2e5cae16L, 0x6fee86ac56075af3L, "ArduinoML.structure.PlayRules"));
+  private static final Map<SAbstractConcept, Integer> indices_2qnle6_a0c = buildConceptIndices(MetaAdapterFactory.getConcept(0x5edee0cf46e149f9L, 0x971e6b9e2e5cae16L, 0x720eda988b034b2cL, "ArduinoML.structure.Brick"), MetaAdapterFactory.getConcept(0x5edee0cf46e149f9L, 0x971e6b9e2e5cae16L, 0x42c31259c6405233L, "ArduinoML.structure.Lcd"), MetaAdapterFactory.getConcept(0x5edee0cf46e149f9L, 0x971e6b9e2e5cae16L, 0x6fee86ac56075af3L, "ArduinoML.structure.PlayRules"), MetaAdapterFactory.getConcept(0x5edee0cf46e149f9L, 0x971e6b9e2e5cae16L, 0x42c31259c640a32fL, "ArduinoML.structure.Word"));
 }

@@ -619,5 +619,23 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="5kpVnFjvDkl">
+    <ref role="1M2myG" to="67j:4b34_B6gacJ" resolve="Word" />
+    <node concept="EnEH3" id="5kpVnFjvDkm" role="1MhHOB">
+      <ref role="EomxK" to="67j:4b34_B6gae6" resolve="score" />
+      <node concept="QB0g5" id="5kpVnFjvDko" role="QCWH9">
+        <node concept="3clFbS" id="5kpVnFjvDkp" role="2VODD2">
+          <node concept="3clFbF" id="5kpVnFjvDyE" role="3cqZAp">
+            <node concept="3eOSWO" id="5kpVnFjvFmP" role="3clFbG">
+              <node concept="3cmrfG" id="5kpVnFjvFue" role="3uHU7w">
+                <property role="3cmrfH" value="0" />
+              </node>
+              <node concept="1Wqviy" id="5kpVnFjvDyC" role="3uHU7B" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
