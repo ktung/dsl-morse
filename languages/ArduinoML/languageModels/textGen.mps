@@ -8,6 +8,7 @@
   <imports>
     <import index="67j" ref="r:c3495eae-2a50-4eb5-87a2-5e8ab67ad9fe(ArduinoML.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -15,6 +16,7 @@
         <child id="1082485599096" name="statements" index="9aQI4" />
       </concept>
       <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
+      <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
@@ -46,6 +48,9 @@
       <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
+      </concept>
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
+        <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
       </concept>
       <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
@@ -1498,12 +1503,17 @@
                       <property role="lacIc" value="&quot;" />
                     </node>
                     <node concept="l9hG8" id="6ZIxELm0UGB" role="lcghm">
-                      <node concept="2OqwBi" id="6ZIxELm0VpQ" role="lb14g">
-                        <node concept="37vLTw" id="6ZIxELm0VcL" role="2Oq$k0">
-                          <ref role="3cqZAo" node="6ZIxELm0SkL" resolve="it" />
+                      <node concept="2OqwBi" id="5kpVnFjvMwR" role="lb14g">
+                        <node concept="2OqwBi" id="6ZIxELm0VpQ" role="2Oq$k0">
+                          <node concept="37vLTw" id="6ZIxELm0VcL" role="2Oq$k0">
+                            <ref role="3cqZAo" node="6ZIxELm0SkL" resolve="it" />
+                          </node>
+                          <node concept="3TrcHB" id="6ZIxELm0VBK" role="2OqNvi">
+                            <ref role="3TsBF5" to="67j:4b34_B6gae4" resolve="word" />
+                          </node>
                         </node>
-                        <node concept="3TrcHB" id="6ZIxELm0VBK" role="2OqNvi">
-                          <ref role="3TsBF5" to="67j:4b34_B6gae4" resolve="word" />
+                        <node concept="liA8E" id="5kpVnFjvN1I" role="2OqNvi">
+                          <ref role="37wK5l" to="wyt6:~String.toUpperCase():java.lang.String" resolve="toUpperCase" />
                         </node>
                       </node>
                     </node>

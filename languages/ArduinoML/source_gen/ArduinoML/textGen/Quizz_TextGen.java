@@ -21,7 +21,7 @@ public class Quizz_TextGen extends TextGenDescriptorBase {
     ListSequence.fromList(SLinkOperations.getChildren(ctx.getPrimaryInput(), MetaAdapterFactory.getContainmentLink(0x5edee0cf46e149f9L, 0x971e6b9e2e5cae16L, 0x42c31259c640a313L, 0x42c31259c640a34bL, "words"))).visitAll(new IVisitor<SNode>() {
       public void visit(SNode it) {
         tgs.append("\"");
-        tgs.append(SPropertyOperations.getString(it, MetaAdapterFactory.getProperty(0x5edee0cf46e149f9L, 0x971e6b9e2e5cae16L, 0x42c31259c640a32fL, 0x42c31259c640a384L, "word")));
+        tgs.append(SPropertyOperations.getString(it, MetaAdapterFactory.getProperty(0x5edee0cf46e149f9L, 0x971e6b9e2e5cae16L, 0x42c31259c640a32fL, 0x42c31259c640a384L, "word")).toUpperCase());
         tgs.append("\":");
         tgs.append("" + SPropertyOperations.getInteger(it, MetaAdapterFactory.getProperty(0x5edee0cf46e149f9L, 0x971e6b9e2e5cae16L, 0x42c31259c640a32fL, 0x42c31259c640a386L, "score")));
         tgs.append(",");
