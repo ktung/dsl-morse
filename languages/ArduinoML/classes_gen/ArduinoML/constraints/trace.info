@@ -13,7 +13,7 @@
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
   <root>
     <file name="ConstraintsAspectDescriptor.java">
-      <unit at="13,0,50,0" name="ArduinoML.constraints.ConstraintsAspectDescriptor" />
+      <unit at="13,0,55,0" name="ArduinoML.constraints.ConstraintsAspectDescriptor" />
     </file>
   </root>
   <root nodeRef="r:d79d2cda-3667-41d9-9202-b2af5f45b79f(ArduinoML.constraints)/1590642702903970549">
@@ -144,6 +144,70 @@
         <var name="parentNode" id="1590642702904364642" />
       </scope>
       <unit id="1590642702904364642" at="16,0,58,0" name="ArduinoML.constraints.Brick_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:d79d2cda-3667-41d9-9202-b2af5f45b79f(ArduinoML.constraints)/6132193479431633035">
+    <file name="PlayRules_Constraints.java">
+      <node id="6132193479431633035" at="17,34,18,137" concept="10" />
+      <node id="6132193479431633035" at="22,84,23,119" concept="5" />
+      <node id="6132193479431633035" at="26,40,27,20" concept="6" />
+      <node id="6132193479431633035" at="30,70,31,37" concept="5" />
+      <node id="6132193479431633498" at="31,37,32,68" concept="6" />
+      <node id="6132193479431633035" at="37,40,38,20" concept="6" />
+      <node id="6132193479431633035" at="41,70,42,38" concept="5" />
+      <node id="6132193479431667721" at="42,38,43,68" concept="6" />
+      <node id="6132193479431633035" at="48,40,49,20" concept="6" />
+      <node id="6132193479431633035" at="52,70,53,41" concept="5" />
+      <node id="6132193479431688662" at="53,41,54,67" concept="6" />
+      <node id="6132193479431633035" at="56,7,57,22" concept="6" />
+      <node id="6132193479431633035" at="17,0,20,0" concept="0" trace="PlayRules_Constraints#()V" />
+      <node id="6132193479431633035" at="25,0,29,0" concept="4" trace="hasOwnValidator#()Z" />
+      <node id="6132193479431633035" at="36,0,40,0" concept="4" trace="hasOwnValidator#()Z" />
+      <node id="6132193479431633035" at="47,0,51,0" concept="4" trace="hasOwnValidator#()Z" />
+      <node id="6132193479431633035" at="29,0,34,0" concept="4" trace="validateValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;)Z" />
+      <node id="6132193479431633035" at="40,0,45,0" concept="4" trace="validateValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;)Z" />
+      <node id="6132193479431633035" at="51,0,56,0" concept="4" trace="validateValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;)Z" />
+      <node id="6132193479431633035" at="23,119,34,7" concept="1" />
+      <node id="6132193479431633035" at="34,7,45,7" concept="1" />
+      <node id="6132193479431633035" at="45,7,56,7" concept="1" />
+      <node id="6132193479431633035" at="21,0,59,0" concept="4" trace="getSpecifiedProperties#()Ljava/util/Map;" />
+      <scope id="6132193479431633035" at="17,34,18,137" />
+      <scope id="6132193479431633035" at="26,40,27,20" />
+      <scope id="6132193479431633035" at="37,40,38,20" />
+      <scope id="6132193479431633035" at="48,40,49,20" />
+      <scope id="6132193479431633035" at="30,70,32,68">
+        <var name="propertyName" id="6132193479431633035" />
+      </scope>
+      <scope id="6132193479431633035" at="41,70,43,68">
+        <var name="propertyName" id="6132193479431633035" />
+      </scope>
+      <scope id="6132193479431633035" at="52,70,54,67">
+        <var name="propertyName" id="6132193479431633035" />
+      </scope>
+      <scope id="6132193479431633035" at="17,0,20,0" />
+      <scope id="6132193479431633035" at="25,0,29,0" />
+      <scope id="6132193479431633035" at="36,0,40,0" />
+      <scope id="6132193479431633035" at="47,0,51,0" />
+      <scope id="6132193479431633035" at="29,0,34,0">
+        <var name="node" id="6132193479431633035" />
+        <var name="propertyValue" id="6132193479431633035" />
+      </scope>
+      <scope id="6132193479431633035" at="40,0,45,0">
+        <var name="node" id="6132193479431633035" />
+        <var name="propertyValue" id="6132193479431633035" />
+      </scope>
+      <scope id="6132193479431633035" at="51,0,56,0">
+        <var name="node" id="6132193479431633035" />
+        <var name="propertyValue" id="6132193479431633035" />
+      </scope>
+      <scope id="6132193479431633035" at="22,84,57,22">
+        <var name="properties" id="6132193479431633035" />
+      </scope>
+      <scope id="6132193479431633035" at="21,0,59,0" />
+      <unit id="6132193479431633035" at="24,147,34,5" name="ArduinoML.constraints.PlayRules_Constraints$1" />
+      <unit id="6132193479431633035" at="35,148,45,5" name="ArduinoML.constraints.PlayRules_Constraints$2" />
+      <unit id="6132193479431633035" at="46,151,56,5" name="ArduinoML.constraints.PlayRules_Constraints$3" />
+      <unit id="6132193479431633035" at="16,0,60,0" name="ArduinoML.constraints.PlayRules_Constraints" />
     </file>
   </root>
 </debug-info>
