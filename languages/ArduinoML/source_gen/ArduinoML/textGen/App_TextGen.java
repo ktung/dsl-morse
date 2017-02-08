@@ -47,26 +47,59 @@ public class App_TextGen extends TextGenDescriptorBase {
     tgs.newLine();
     tgs.indent();
     tgs.append("resetInputSignal();");
+    tgs.newLine();
     tgs.append("}");
+    tgs.newLine();
+    tgs.newLine();
     ctx.getBuffer().area().decreaseIndent();
 
-    tgs.newLine();
+    tgs.append("bool finish = false;");
     tgs.newLine();
     tgs.append("void loop() {");
     tgs.newLine();
     ctx.getBuffer().area().increaseIndent();
     tgs.indent();
+    tgs.append("lcd.clear();");
+    tgs.newLine();
+    tgs.indent();
     tgs.append("String quizz;");
     tgs.newLine();
     tgs.indent();
-    tgs.append("while(quizz.length() < 2) {");
+    tgs.append("while(quizz.length() < 1) {");
     tgs.newLine();
     tgs.indent();
     tgs.indent();
     tgs.append("quizz = Serial.readStringUntil(';');");
     tgs.newLine();
     tgs.indent();
+    tgs.indent();
+    tgs.append("if (quizz.equals(\"The end\")) {");
+    tgs.newLine();
+    tgs.indent();
+    tgs.indent();
+    tgs.indent();
+    tgs.append("lcd.print(\"Final Score:\"+ String(score));");
+    tgs.newLine();
+    tgs.indent();
+    tgs.indent();
+    tgs.indent();
+    tgs.append("delay(5000);");
+    tgs.newLine();
+    tgs.indent();
+    tgs.indent();
+    tgs.indent();
+    tgs.append("finish = true;");
+    tgs.newLine();
+    tgs.indent();
+    tgs.indent();
     tgs.append("}");
+    tgs.newLine();
+    tgs.indent();
+    tgs.append("}");
+    tgs.newLine();
+
+    tgs.indent();
+    tgs.append("if (!finish) {");
     tgs.indent();
     tgs.append("Serial.write(\"Ready\");");
     tgs.newLine();
@@ -303,9 +336,6 @@ public class App_TextGen extends TextGenDescriptorBase {
     tgs.append("delay(1000);");
     tgs.newLine();
     tgs.indent();
-    tgs.append("lcd.clear();");
-    tgs.newLine();
-    tgs.indent();
     tgs.append("String scoreAnswer = \"\";");
     tgs.newLine();
     tgs.indent();
@@ -324,6 +354,9 @@ public class App_TextGen extends TextGenDescriptorBase {
     tgs.newLine();
     tgs.indent();
     tgs.append("score = scoreAnswer.toInt();");
+    tgs.newLine();
+    tgs.indent();
+    tgs.append("}");
 
     ctx.getBuffer().area().decreaseIndent();
     tgs.newLine();
@@ -483,6 +516,8 @@ public class App_TextGen extends TextGenDescriptorBase {
     tgs.append("response = arduino.readline()");
     tgs.newLine();
     tgs.newLine();
+
+    tgs.append("arduino.write(\"The end;\")");
 
     ctx.getBuffer().area().decreaseIndent();
   }

@@ -11,13 +11,22 @@ void setup() {
   pinMode(9, INPUT);
   pinMode(11, OUTPUT);
   digitalWrite(LED,LOW);
-  resetInputSignal();}
+  resetInputSignal();
+}
 
+bool finish = false;
 void loop() {
+  lcd.clear();
   String quizz;
-  while(quizz.length() < 2) {
+  while(quizz.length() < 1) {
     quizz = Serial.readStringUntil(';');
-  }  Serial.write("Ready");
+    if (quizz.equals("The end")) {
+      lcd.print("Final Score:"+ String(score));
+      delay(5000);
+      finish = true;
+    }
+  }
+  if (!finish) {  Serial.write("Ready");
   String msgScore = "Score:"+String(score);
   lcd.print(msgScore);
   String msgQuizz = quizz + " = ";
@@ -65,13 +74,13 @@ void loop() {
   }
 
   delay(1000);
-  lcd.clear();
   String scoreAnswer = "";
   while (scoreAnswer.length() < 1){
     scoreAnswer= Serial.readStringUntil(';');
   }
   Serial.write("Score");
   score = scoreAnswer.toInt();
+  }
 }
 
 -------------------------------------------------------------------------------------------
@@ -83,7 +92,7 @@ import serial
 import random
 import collections
 
-Test =  {"EE":2,"II":5,"TT":3,"SS":10,"55":5,}
+Test =  {"EE":2,"II":5,"TT":3,"SS":10,"AA":5,}
 Main =  {"SOS":10,"HELLO":5,"BONJOUR":2,}
 Disney =  {"FROZEN":12,"VAIANA":9,"MOWGLI":14,}
 
@@ -94,15 +103,14 @@ COUCOU = collections.OrderedDict(sorted(COUCOU.items()))
 
 
 score = 0
-retry = 0
+retry = 3
 arduino = serial.Serial('/dev/ttyACM0', 9600) 
 arduino.timeout = 1.4
 success = True
-while len(COUCOU) != 0 and score < 10:
+while len(Test) != 0 and score < 10:
   if retry <= 0 or success:
-    word, wordScore = random.choice(list(COUCOU.items()))
-    del COUCOU[word]
-    retry = 0
+    word, wordScore = Test.popitem()
+    retry = 3
     success = False
   response = ''
   while("Ready" not in response):
@@ -118,9 +126,10 @@ while len(COUCOU) != 0 and score < 10:
   else:
     retry -=1
     if retry <= 0:
-      score += 0
+      score += -2
 
   while("Score" not in response):
     arduino.write(str(score)+";")
     response = arduino.readline()
 
+arduino.write("The end;")

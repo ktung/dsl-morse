@@ -54,8 +54,8 @@
     <node concept="24wV5a" id="6EgwG$J5Xj4" role="mSlq3">
       <property role="TrG5h" value="Test" />
       <node concept="24wV5Q" id="6EgwG$J5Xje" role="24wV4i">
-        <property role="24wV7t" value="EE" />
         <property role="24wV7v" value="2" />
+        <property role="24wV7t" value="EE" />
       </node>
       <node concept="24wV5Q" id="6EgwG$J62PH" role="24wV4i">
         <property role="24wV7t" value="II" />
